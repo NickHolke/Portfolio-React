@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+// $primary-orange: #FF5851;
+$primary-teal:#41B3A3;
+$primary-teal:#153B56;
+// $primary-teal:#142430;
+$primary-grey: rgb(249, 249, 249);
+// $primary-blue: rgb(59, 57, 82);
+// $primary-blue: rgb(60, 55, 108);
+// $primary-blue: rgb(45, 39, 97);
+$primary-blue: #1B242f;
+$font: 'Montserrat';
+
+.landingPage {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: rgb(30, 29, 40);
+  font-size: 50px;
+  font-family: $font;
+  font-weight: bold;
+}
+
+.topHalf {
+  background: $primary-teal;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: $primary-grey;
+  flex: 1;
+}
+
+.bottomHalf {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: $primary-teal;
+  flex: 1;
+}
