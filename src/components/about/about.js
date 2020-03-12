@@ -7,9 +7,11 @@ import {
   photoWrapper, 
   skillsWrapper
 } from './about.module.scss';
+import { NavBar } from '../routes';
 
 const LandingPage = () => (
   <div id="about-section" className={aboutSection}>
+    <NavBar />
     <div className={contentWrapper}>
       <div className={title}>
         <h2>About me</h2>
