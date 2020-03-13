@@ -1,0 +1,39 @@
+@import '../globalStyle.scss';
+
+.wrapper {
+  background: tan;
+  height: 28px;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.bar {
+  background: teal;
+  height: 100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition:transform 700ms cubic-bezier(.5,.25,.51,1);
+}
+
+.barGrow {
+  transform: scaleX(1);
+}
+
+.barBackground {
+  background: rgb(232, 232, 232);
+  flex: 4;
+  height: 100%;
+}
+
+.category {
+  flex: 1;
+  background: #04C2C9;
+  color: $lightGrey;
+  font-family: $titleFont;
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
