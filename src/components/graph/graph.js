@@ -20,6 +20,7 @@ const Graph = () => {
       <Bar width='90%' delay='900ms' name='REACT'/>
       <Bar width='90%' delay='1000ms' name='JAVASCRIPT'/>
       <Bar width='80%' delay='1100ms' name='NATIVE'/>
+      <Bar width='80%' delay='1200ms' name='PING-PONG'/>
       <Bar width='80%' delay='1200ms' name='CSS'/>
       <Bar width='80%' delay='1300ms' name='HTML'/>
       <Bar width='75%' delay='1400ms' name='NODE'/>
