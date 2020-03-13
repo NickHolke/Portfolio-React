@@ -7,7 +7,7 @@ import {
   photoWrapper, 
   skillsWrapper
 } from './about.module.scss';
-import { NavBar } from '../routes';
+import { NavBar, Graph } from '../routes';
 
 const LandingPage = () => (
   <div id="about-section" className={aboutSection}>
@@ -21,7 +21,7 @@ const LandingPage = () => (
           photo goes here
         </div>
         <div className={skillsWrapper}>
-          skills go here
+          <Graph />
         </div>
       </div>
     </div>
