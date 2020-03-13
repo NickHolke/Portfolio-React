@@ -14,8 +14,11 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  color: $lightGrey;
-  flex: 1;
+  // color: $lightGrey;
+  color: white;
+  height: 100%;
+  transition: height 800ms ease-in-out;
+  z-index: 1;
 }
 
 .bottomHalf {
@@ -24,5 +27,27 @@
   align-items: center;
   justify-content: space-between;
   color: $blue;
-  flex: 1;
+  height: 0%;
+  transition: height 800ms ease-in-out;
+}
+
+.showPage {
+  height: 50%;
+}
+
+.topText {
+  transform: translateY(120px);
+  transition: transform 800ms ease-in-out;
+  transition-delay: 600ms;
+}
+
+.bottomText {
+  transform: translateY(-120px);
+  transition: transform 800ms ease-in-out;
+  transition-delay: 2s;
+  z-index: -1;
+}
+
+.moveText {
+  transform: translateY(0);
 }
