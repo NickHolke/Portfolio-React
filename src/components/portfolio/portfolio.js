@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
-import {title, portfolioSection, projects} from './portfolio.module.scss';
-// import Project from '../project/project';
+import {title, portfolioSection, projectsWrapper} from './portfolio.module.scss';
+import {data} from './mockData';
+import Project from '../project/project';
 
 const Portfolio = (props) => {
-  const [projects, setProjects] = useState([{title: 'Project 1', img: 'imageURL', link: 'linkHere'}]);
+  const [projects, setProjects] = useState(data);
 
   return (
     <div id="portfolio-section" className={portfolioSection}>
       <div className={title}>
         <h2>Portfolio</h2>
       </div>
-      <div className={projects}>
-        {/* {projects.map((project, idx) => <Project key={idx} project={project} />)} */}
-        {projects.map((project) => <div>{project.title}</div>)}
+      <div className={projectsWrapper}>
+        {projects.map((project, idx) => <Project key={idx} project={project} />)}
       </div>
     </div>
   )

@@ -26,10 +26,10 @@ const LandingPage = () => {
   return (
     <div ref={ref} className={landingPage}>
       <div className={topHalf}>
-        <h1 class={topText}>Hello I'm Nick Holke.</h1>
+        <h1 className={topText}>Hello I'm Nick Holke.</h1>
       </div>
       <div className={bottomHalf}>
-        <h1 class={bottomText}>I'm a software engineer.</h1>
+        <h1 className={bottomText}>I'm a software engineer.</h1>
         V
       </div>
     </div>
