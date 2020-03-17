@@ -1,0 +1,15 @@
+@import '../globalStyle.scss';
+@import '../about/about.module.scss';
+
+.portfolioSection {
+  height: 100vh;
+  background: rgb(242, 242, 242);
+  padding: 50px 80px 0px 80px;
+}
+
+.title {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
