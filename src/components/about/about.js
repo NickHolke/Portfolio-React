@@ -11,7 +11,6 @@ import { Graph, Photo } from '../routes';
 
 const LandingPage = () => (
   <div id="about-section" className={aboutSection}>
-    {/* <div className={contentWrapper}> */}
       <div className={title}>
         <h2>About me</h2>
       </div>
@@ -23,7 +22,6 @@ const LandingPage = () => (
           <Graph />
         </div>
       </div>
-    {/* </div> */}
   </div>
 )
 

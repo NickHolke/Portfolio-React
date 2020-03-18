@@ -10,8 +10,12 @@
   height: 300px;
   width: 400px;
   margin-left: 20px;
+  margin-bottom: 20px;
   border-radius: 30px;
   box-shadow: 1px 1px 4px grey;
+  transform: translateY(200px);
+  opacity: 0;
+  transition: transform 800ms ease-in-out, opacity 800ms ease-in-out;
 }
 
 .infoWrapper {
@@ -54,4 +58,9 @@
 
 .moveText {
   transform: translateY(0);
+}
+
+.showClass {
+  transform: translateY(0);
+  opacity: 1;
 }

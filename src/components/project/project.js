@@ -1,7 +1,7 @@
 import React from 'react';
-import { wrapper, siteImage, infoWrapper, link, title, moveText } from './project.module.scss';
+import { wrapper, siteImage, infoWrapper, link, title, moveText, showClass} from './project.module.scss';
 
-const Project = ({ project }) => {
+const Project = ({ project, show, delay }) => {
   const mouseEnter = (e) => {
     let children = e.target.children;
     if (children.length === 0) {
@@ -16,14 +16,15 @@ const Project = ({ project }) => {
 
   const mouseLeave = (e) => {
     let children = e.target.children;
-    // console.log(children)
     for (let i = 0; i < children.length; i++) {
       children[i].classList.remove(moveText);
     }
   }
+
+  let wrapperClass = show ? [wrapper, showClass].join(' ') : wrapper;
   
   return (
-    <div className={wrapper}>
+    <div className={wrapperClass} style={{transitionDelay: delay}}>
       <img className={siteImage} src={project.img} alt='project-img'/>
       <div className={infoWrapper} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
         <p className={title}>{project.title}</p>
