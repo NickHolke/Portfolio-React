@@ -5,6 +5,7 @@ import Graph from './graph/graph';
 import Bar from './bar/bar';
 import Photo from './photo/photo';
 import Portfolio from './portfolio/portfolio';
+import Contact from './contact/contact';
 
 export {
   About,
@@ -14,4 +15,5 @@ export {
   Bar,
   Photo,
   Portfolio,
+  Contact
 }
