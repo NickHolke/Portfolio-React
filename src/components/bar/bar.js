@@ -1,5 +1,5 @@
 import React from 'react';
-import { bar, barBackground, barGrow, wrapper, category, text } from './bar.module.scss';
+import { bar, barBackground, barGrow, wrapper, text } from './bar.module.scss';
 import { useInView } from 'react-intersection-observer';
 
 const Bar = ({ width, delay, name }) => {
@@ -13,8 +13,6 @@ const Bar = ({ width, delay, name }) => {
 
   return (
     <div className={wrapper}>
-      {/* <div className={category}>{name}</div> */}
-      {/* <span>{name}</span> */}
       <div className={barBackground}>
       <span className={text}>{name}</span>
         <div ref={ref} className={bar} style={{width: width, transitionDelay: delay}}></div>
