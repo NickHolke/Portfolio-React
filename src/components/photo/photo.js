@@ -16,7 +16,7 @@ const Photo = () => {
   }
   return (
     <div ref={ref} className={wrapper}>
-      <img src="linkedIn_pic.jpeg" alt="no pic"></img>
+      <img src="media/linkedIn_pic.jpeg" alt="no pic"></img>
       <div className={textWrapper}>
         I'm a Full-Stack Developer in the Bay Area with a penchant for pixel perfect Front-Ends.
         Outside making a clean user experience, I enjoy soccer and stand-up.  

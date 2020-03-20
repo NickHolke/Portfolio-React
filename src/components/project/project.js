@@ -1,36 +1,51 @@
-import React from 'react';
-import { wrapper, siteImage, infoWrapper, link, title, moveText, showClass} from './project.module.scss';
+import React, {useState} from 'react';
+import { 
+  wrapper, 
+  siteImage, 
+  infoWrapper, 
+  title, 
+  moveText, 
+  showClass, 
+  icon, 
+  iconsWrapper,
+  videoWrapper,
+} from './project.module.scss';
 
 const Project = ({ project, show, delay }) => {
-  const mouseEnter = (e) => {
-    let children = e.target.children;
-    if (children.length === 0) {
-      children = e.target.parentElement.children;
-    }
-    if (children.length) {
-      for (let i = 0; i < children.length; i++) {
-        children[i].classList.add(moveText);
-      }
-    } 
-  }
-
-  const mouseLeave = (e) => {
-    let children = e.target.children;
-    for (let i = 0; i < children.length; i++) {
-      children[i].classList.remove(moveText);
-    }
-  }
+  const [showText, setShowText] = useState(false);
+  const [showVideo, setShowVideo] = useState(false);
 
   let wrapperClass = show ? [wrapper, showClass].join(' ') : wrapper;
-  
+  let iconsClass = showText ? [iconsWrapper, moveText].join(' ') : iconsWrapper;
+  let titleClass = showText ? [title, moveText].join(' ') : title;
+
   return (
-    <div className={wrapperClass} style={{transitionDelay: delay}}>
-      <img className={siteImage} src={project.img} alt='project-img'/>
-      <div className={infoWrapper} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
-        <p className={title}>{project.title}</p>
-        <a className={link} href={project.link}>link here</a>
+    <>
+    {showVideo &&
+      <div className={videoWrapper}>
+        <video controls>
+          <source src="media/robinhood.mp4" type="video/mp4"/>
+        </video>
       </div>
+      }
+    <div 
+      className={wrapperClass} 
+      style={{transitionDelay: delay}} 
+      onMouseEnter={()=>setShowText(true)} 
+      onMouseLeave={()=>setShowText(false)}
+    >
+      
+      <img className={siteImage} src={project.img} alt='project-img'/>
+      <div className={infoWrapper}>
+        <p className={titleClass}>{project.title}</p>
+        <div className={iconsClass}>
+          <img className={icon} src='media/youtube.svg' alt='video' onClick={()=>setShowVideo(true)}/>
+          <img className={icon} src='media/github.svg' alt='github'/>
+        </div>
+      </div>
+      
     </div>
+    </>
   )
 };
 
