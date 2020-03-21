@@ -21,14 +21,19 @@
   flex-wrap: wrap;
 }
 
-.backgroundStuff {
+.bgColor {
   position: absolute;
   left: 0;
   height: 110%;
   width: 100%;
-  background: white;
-  opacity: 0.80;
+  background: rgb(242, 242, 242);
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
   z-index: 2;
+}
+
+.bgShow {
+  opacity: 0.8;
 }
 
 .videoWrapper {
@@ -44,6 +49,12 @@
   max-height: 700px;
   max-width: 900px;
   border-radius: 10px;
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+.showWrapper {
+  opacity: 1;
 }
 
 video {
