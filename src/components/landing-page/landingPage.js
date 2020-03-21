@@ -24,7 +24,7 @@ const LandingPage = () => {
   }
 
   return (
-    <div ref={ref} className={landingPage}>
+    <div id="home" ref={ref} className={landingPage}>
       <div className={topHalf}>
         <h1 className={topText}>Hello I'm Nick Holke.</h1>
       </div>

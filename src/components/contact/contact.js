@@ -36,7 +36,7 @@ const Contact = () => {
 
 
   return (
-    <div className={wrapper}>
+    <div id="contact-section" className={wrapper}>
       <div className={title}>
         <h2 className={titleText}>Contact</h2>
       </div>
