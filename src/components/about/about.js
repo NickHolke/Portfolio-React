@@ -5,14 +5,17 @@ import {
   title, 
   wrapper, 
   photoWrapper, 
-  skillsWrapper
+  skillsWrapper,
+  underline
 } from './about.module.scss';
 import { Graph, Photo } from '../routes';
 
 const LandingPage = () => (
   <div id="about-section" className={aboutSection}>
       <div className={title}>
-        <h2>About me</h2>
+        {/* <div className={underline}> */}
+          <h2>About me</h2>
+        {/* </div> */}
       </div>
       <div className={wrapper}>
         <div className={photoWrapper}>

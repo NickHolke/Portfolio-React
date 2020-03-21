@@ -5,6 +5,8 @@ h2 {
   font-weight: bold;
   font-size: 40px;
   color: $titleColor;
+  padding: 0px 5px 0px 8px;
+  border-bottom: 2px solid $titleColor;
 }
 
 .aboutSection {
@@ -17,11 +19,15 @@ h2 {
 
 .title {
   display: flex;
-  flex: 1;
+  // flex: 1;
   justify-content: center;
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+.underline {
+  // margin-bottom: 1px solid black;
 }
 
 .contentWrapper {
