@@ -20,3 +20,38 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+.backgroundStuff {
+  position: absolute;
+  left: 0;
+  height: 110%;
+  width: 100%;
+  background: white;
+  opacity: 0.80;
+  z-index: 2;
+}
+
+.videoWrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  border-radius: 20px;
+  z-index: 8;
+  max-height: 700px;
+  max-width: 900px;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+video {
+  width: 100%;
+  border-radius: 10px;
+  z-index: 3;
+  opacity: 1;
+}
+
+

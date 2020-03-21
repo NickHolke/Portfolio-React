@@ -3,6 +3,7 @@ const data = [
     title: 'Stock Trading App',
     img: 'media/robinhood.png',
     link: 'https://github.com/HRSF124-JANK/Robinhood-TradeStock',
+    video: 'media/robinhood.mp4',
   },
   {
     title: 'Project 2',
