@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect } from 'react';
 import { 
   graphWrapper,
   show,
@@ -7,25 +7,28 @@ import { useInView } from 'react-intersection-observer';
 import { Bar } from '../routes';
 
 const Graph = () => {
-  const [ref, inView, entry] = useInView({
-    threshold: 0,
-  });
+  const [showBars, setShowBars] = useState(false);
+  const [ref, inView, entry] = useInView();
 
-  if (inView) {
-    entry.target.classList.add(show)
-  }
+  useEffect(() => {
+    if (inView) {
+      setShowBars(true);
+    }
+  }, [inView])
+
+  let wrapperClass = showBars ? [graphWrapper, show].join(' ') : graphWrapper;
 
   return (
-    <div ref={ref} className={graphWrapper}>
-      <Bar width='90%' delay='900ms' name='REACT'/>
-      <Bar width='90%' delay='1000ms' name='JAVASCRIPT'/>
-      <Bar width='80%' delay='1100ms' name='NATIVE'/>
-      <Bar width='80%' delay='1200ms' name='PING-PONG'/>
-      <Bar width='80%' delay='1200ms' name='CSS'/>
-      <Bar width='80%' delay='1300ms' name='HTML'/>
-      <Bar width='75%' delay='1400ms' name='NODE'/>
-      <Bar width='70%' delay='1500ms' name='MySQL'/>
-      <Bar width='70%' delay='1600ms' name='Mongo'/>
+    <div ref={ref} className={wrapperClass}>
+      <Bar width='90%' delay='900ms' name='REACT' show={showBars}/>
+      <Bar width='90%' delay='1000ms' name='JAVASCRIPT' show={showBars}/>
+      <Bar width='80%' delay='1100ms' name='NATIVE' show={showBars}/>
+      <Bar width='80%' delay='1200ms' name='PING-PONG' show={showBars}/>
+      <Bar width='80%' delay='1200ms' name='CSS' show={showBars}/>
+      <Bar width='80%' delay='1300ms' name='HTML' show={showBars}/>
+      <Bar width='75%' delay='1400ms' name='NODE' show={showBars}/>
+      <Bar width='70%' delay='1500ms' name='MySQL' show={showBars}/>
+      <Bar width='70%' delay='1600ms' name='Mongo' show={showBars}/>
     </div>
   );
 }
