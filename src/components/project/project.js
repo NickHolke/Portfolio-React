@@ -9,13 +9,14 @@ import {
   icon, 
   iconsWrapper,
 } from './project.module.scss';
+import classNames from 'classnames';
 
 const Project = ({ project, show, delay, videoHandler }) => {
   const [showText, setShowText] = useState(false);
 
-  let wrapperClass = show ? [wrapper, showClass].join(' ') : wrapper;
-  let iconsClass = showText ? [iconsWrapper, moveText].join(' ') : iconsWrapper;
-  let titleClass = showText ? [title, moveText].join(' ') : title;
+  let wrapperClass = classNames(wrapper, {[showClass]: show});
+  let iconsClass = classNames(iconsWrapper, {[moveText]: showText});
+  let titleClass = classNames(title, {[moveText]: showText});
 
   return (
     <div 

@@ -1,8 +1,9 @@
 import React from 'react';
 import { bar, barBackground, barGrow, wrapper, text } from './bar.module.scss';
+import classNames from 'classnames';
 
 const Bar = ({ width, delay, name, show }) => {
-  let barClass = show ? [bar, barGrow].join(' ') : bar;
+  let barClass = classNames(bar, {[barGrow]: show});
 
   return (
     <div className={wrapper}>

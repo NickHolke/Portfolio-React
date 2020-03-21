@@ -9,27 +9,25 @@ import {
   moveText, 
 } from './landingPage.module.scss';
 import { useInView } from 'react-intersection-observer';
+import classNames from 'classnames';
 
 const LandingPage = () => {
-  const [ref, inView, entry] = useInView({
+  const [ref, inView] = useInView({
     threshold: 0,
   })
 
-  if (inView) {
-    for (let i = 0; i < 2; i++) {
-      let child = entry.target.children[i];
-      child.classList.add(showPage);
-      child.children[0].classList.add(moveText);
-    }
-  }
+  let topWrapper = classNames(topHalf, {[showPage]: inView});
+  let botWrapper = classNames(bottomHalf, {[showPage]: inView});
+  let topTextClass = classNames(topText, {[moveText]: inView});
+  let botTextClass = classNames(bottomText, {[moveText]: inView});
 
   return (
     <div id="home" ref={ref} className={landingPage}>
-      <div className={topHalf}>
-        <h1 className={topText}>Hello I'm Nick Holke.</h1>
+      <div className={topWrapper}>
+        <h1 className={topTextClass}>Hello I'm Nick Holke.</h1>
       </div>
-      <div className={bottomHalf}>
-        <h1 className={bottomText}>I'm a software engineer.</h1>
+      <div className={botWrapper}>
+        <h1 className={botTextClass}>I'm a software engineer.</h1>
         V
       </div>
     </div>

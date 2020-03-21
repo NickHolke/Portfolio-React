@@ -5,10 +5,11 @@ import {
 } from './graph.module.scss';
 import { useInView } from 'react-intersection-observer';
 import { Bar } from '../routes';
+import classNames from 'classnames';
 
 const Graph = () => {
   const [showBars, setShowBars] = useState(false);
-  const [ref, inView, entry] = useInView();
+  const [ref, inView,] = useInView();
 
   useEffect(() => {
     if (inView) {
@@ -16,7 +17,7 @@ const Graph = () => {
     }
   }, [inView])
 
-  let wrapperClass = showBars ? [graphWrapper, show].join(' ') : graphWrapper;
+  let wrapperClass = classNames(graphWrapper, {[show]: showBars});
 
   return (
     <div ref={ref} className={wrapperClass}>
