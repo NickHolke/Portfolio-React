@@ -44,14 +44,15 @@
   max-height: 700px;
   max-width: 900px;
   border-radius: 10px;
-  opacity: 1;
 }
 
 video {
+  box-sizing: border-box;
   width: 100%;
   border-radius: 10px;
   z-index: 3;
   opacity: 1;
+  outline: none;
 }
 
 

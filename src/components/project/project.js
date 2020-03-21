@@ -31,13 +31,8 @@ const Project = ({ project, show, delay, videoHandler }) => {
     <div 
       className={wrapperClass} 
       style={{transitionDelay: delay}} 
-      onMouseOver={()=>{
-        console.log('entered')
-        setShowText(true)
-      }} 
-      onMouseLeave={()=>{
-        console.log('exited')
-        setShowText(false)}}
+      onMouseOver={()=>setShowText(true)} 
+      onMouseLeave={()=>setShowText(false)}
     >
       
       <img className={siteImage} src={project.img} alt='project-img'/>

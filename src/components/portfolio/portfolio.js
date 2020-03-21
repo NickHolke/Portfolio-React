@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import {title, portfolioSection, projectsWrapper, showProjects, projectWrapper, videoWrapper, backgroundStuff} from './portfolio.module.scss';
+import {title, portfolioSection, projectsWrapper, videoWrapper, backgroundStuff,} from './portfolio.module.scss';
 import {data} from './mockData';
 import Project from '../project/project';
 import { useInView } from 'react-intersection-observer';
@@ -10,6 +10,7 @@ const Portfolio = (props) => {
   const [ref, inView, entry] = useInView();
   const [video, setVideo] = useState('');
   const [showVideo, setShowVideo] = useState(false);
+  const [showControls, setShowControls] = useState(false);
 
   const videoHandler = (video) => {
     setVideo(video);
@@ -27,7 +28,7 @@ const Portfolio = (props) => {
       {showVideo &&
       <>
         <div className={videoWrapper}>
-          <video controls>
+          <video controls={showControls} onLoadedData={() => setShowControls(true)}>
             <source src={video} type="video/mp4"/>
           </video>
         </div>
