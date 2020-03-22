@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { 
   landingPage, 
   topHalf, 
@@ -8,21 +8,23 @@ import {
   showPage,
   moveText, 
 } from './landingPage.module.scss';
-import { useInView } from 'react-intersection-observer';
 import classNames from 'classnames';
 
 const LandingPage = () => {
-  const [ref, inView] = useInView({
-    threshold: 0,
-  })
+  const[topWrapper, setTopWrapper] = useState(topHalf);
+  const[botWrapper, setBotWrapper] = useState(bottomHalf);
+  const[topTextClass, setTopTextClass] = useState(topText);
+  const[botTextClass, setBotTextClass] = useState(bottomText);
 
-  let topWrapper = classNames(topHalf, {[showPage]: inView});
-  let botWrapper = classNames(bottomHalf, {[showPage]: inView});
-  let topTextClass = classNames(topText, {[moveText]: inView});
-  let botTextClass = classNames(bottomText, {[moveText]: inView});
+  useEffect(()=> {
+    setTopWrapper(classNames(topHalf, showPage));
+    setBotWrapper(classNames(bottomHalf, showPage));
+    setTopTextClass(classNames(topText, moveText));
+    setBotTextClass(classNames(bottomText, moveText));
+  },[])
 
   return (
-    <div id="home" ref={ref} className={landingPage}>
+    <div id="home" className={landingPage}>
       <div className={topWrapper}>
         <h1 className={topTextClass}>Hello I'm Nick Holke.</h1>
       </div>
