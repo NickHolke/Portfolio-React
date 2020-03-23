@@ -11,6 +11,10 @@
 
 .topHalf {
   background: $blue;
+  background: #285059;
+  // background: #2C3539;
+  // background: linear-gradient(90deg, rgba(4,194,201,1) 0%, rgba(1,135,140,1) 100%);
+  // background: $darkBlue;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -27,6 +31,9 @@
   align-items: center;
   justify-content: space-between;
   color: $blue;
+  color: #2C3539;
+  color: #285059;
+  // color: #55a2a6;
   height: 0%;
   transition: height 800ms ease-in-out;
 }
@@ -42,6 +49,9 @@
 }
 
 .bottomText {
+  // background: -webkit-linear-gradient(90deg, rgba(4,194,201,1) 0%, rgba(1,135,140,1) 100%);
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
   transform: translateY(-120px);
   transition: transform 800ms ease-in-out;
   transition-delay: 2s;

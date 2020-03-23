@@ -1,14 +1,12 @@
 @import '../globalStyle.scss';
-// @import '../about/about.module.scss';
 
 .portfolioSection {
-  // height: 120vh;
   background: rgb(242, 242, 242);
-  padding: 0px 80px 40px 80px;
+  padding: 0px 80px 80px 80px;
 }
 
 .title {
-  padding: 80px 0px 40px 0px;
+  padding: 80px 0px 60px 0px;
   display: flex;
   flex: 1;
   justify-content: center;
@@ -16,7 +14,6 @@
 }
 
 .projectsWrapper {
-  // margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -28,7 +25,6 @@
   width: 100%;
   background: rgb(242, 242, 242);
   opacity: 0;
-  transition: opacity 300ms ease-in-out;
   z-index: 2;
 }
 
@@ -40,17 +36,14 @@
   position: absolute;
   left: 0;
   right: 0;
-  padding-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 80px auto 0px auto;
   margin-bottom: 40px;
   border-radius: 20px;
-  z-index: 8;
+  z-index: 3;
   max-height: 700px;
   max-width: 900px;
   border-radius: 10px;
   opacity: 0;
-  transition: opacity 300ms ease-in-out;
 }
 
 .showWrapper {

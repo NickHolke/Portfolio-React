@@ -33,8 +33,6 @@ const Contact = () => {
 
     resetHooks();
   }
-
-
   return (
     <div id="contact-section" className={wrapper}>
       <div className={title}>

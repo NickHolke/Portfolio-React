@@ -3,6 +3,7 @@ import {
   wrapper,
   textWrapper,
   show,
+  cartoon
 } from './photo.module.scss';
 import { useInView } from 'react-intersection-observer';
 import classNames from 'classnames';
@@ -19,10 +20,9 @@ const Photo = () => {
   
   return (
     <div ref={ref} className={wrapperClass}>
-      <img src="media/linkedIn_pic.jpeg" alt="no pic"></img>
+      <img class={cartoon} src="media/nick_cartoon.png" alt="no pic"></img>
       <div className={textWrapper}>
         I'm a Full-Stack Developer in the Bay Area with a penchant for pixel perfect Front-Ends.
-        Outside making a clean user experience, I enjoy soccer and stand-up.  
       </div>
     </div>
   )

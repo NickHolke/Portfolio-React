@@ -8,6 +8,7 @@ import {
   showClass, 
   icon, 
   iconsWrapper,
+  subTitle,
 } from './project.module.scss';
 import classNames from 'classnames';
 
@@ -27,10 +28,15 @@ const Project = ({ project, show, delay, videoHandler }) => {
     >
       <img className={siteImage} src={project.img} alt='project-img'/>
       <div className={infoWrapper}>
-        <p className={titleClass}>{project.title}</p>
+        <div className={titleClass}>
+          <p>{project.title}</p>
+          <p className={subTitle}>{project.subTitle}</p>
+        </div>
         <div className={iconsClass}>
           <img className={icon} src='media/youtube.svg' alt='video' onClick={()=>videoHandler(project.video)}/>
-          <img className={icon} src='media/github.svg' alt='github'/>
+          <a href={project.link} target="_blank">
+            <img className={icon} src='media/github.svg' alt='github'/>
+          </a>
         </div>
       </div>
       

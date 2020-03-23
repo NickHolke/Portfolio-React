@@ -10,15 +10,12 @@ $radius: 7px;
 
 .bar {
   border-radius: $radius;
-  // background: teal;
-  // display: inline-block;
   background: linear-gradient(90deg, rgba(4,194,201,1) 0%, rgba(1,135,140,1) 100%);
   height: 100%;
   transform: scaleX(0);
   opacity: 0;
   transform-origin: left;
   transition: transform 700ms cubic-bezier(.5,.25,.51,1), opacity 700ms ease-in-out;
-  // transition: opacity 200ms ease-in-out;
 }
 
 .barGrow {
