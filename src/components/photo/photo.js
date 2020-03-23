@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   wrapper,
   textWrapper,
@@ -8,11 +8,14 @@ import { useInView } from 'react-intersection-observer';
 import classNames from 'classnames';
 
 const Photo = () => {
-  const [ref, inView] = useInView({
-    threshold: 0,
-  })
+  const [ref, inView] = useInView({});
+  const [wrapperClass, setWrapperClass] = useState(wrapper);
 
-  let wrapperClass = classNames(wrapper, {[show]: inView});
+  useEffect(()=> {
+    if (inView) {
+      setWrapperClass(classNames(wrapper, show));
+    }
+  }, [inView])
   
   return (
     <div ref={ref} className={wrapperClass}>
