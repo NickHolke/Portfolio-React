@@ -71,8 +71,16 @@ const Contact = () => {
         <input className={submit} type='submit' value='SUBMIT'/>
       </form>
       <div className={linksWrapper}>
-        <BottomLink srcFront='media/github.svg' srcTop='media/github_blue.svg' alt='github'/>
-        <BottomLink srcFront='media/linkedin_white_.svg' srcTop='media/linkedin_blue_.svg' alt='linkedin'/>
+        <BottomLink 
+          srcFront='media/github.svg' 
+          srcTop='media/github_blue.svg' 
+          alt='github'
+          href='https://github.com/NickHolke'/>
+        <BottomLink 
+          srcFront='media/linkedin_white_.svg' 
+          srcTop='media/linkedin_blue_.svg' 
+          alt='linkedin'
+          href='https://www.linkedin.com/in/nick-holke/'/>
       </div>
     </div>
   )
