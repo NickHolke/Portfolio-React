@@ -11,7 +11,7 @@ const data = [
     subTitle: 'PostgreSQL, Node.js, AWS',
     img: 'media/hotel_photo.png',
     link: 'https://github.com/MEND-SF/Photogallery',
-    video: 'media/hotel_video.mp4',
+    video: 'https://youtu.be/a6hKL8eXy04',
   },
   {
     title: 'Reel Rating',
