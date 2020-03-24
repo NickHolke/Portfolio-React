@@ -72,7 +72,7 @@ const Contact = () => {
       </form>
       <div className={linksWrapper}>
         <BottomLink srcFront='media/github.svg' srcTop='media/github_blue.svg' alt='github'/>
-        <BottomLink srcFront='media/linkedin_white.svg' srcTop='media/linkedin_blue.svg' alt='linkedin'/>
+        <BottomLink srcFront='media/linkedin_white_.svg' srcTop='media/linkedin_blue_.svg' alt='linkedin'/>
       </div>
     </div>
   )
