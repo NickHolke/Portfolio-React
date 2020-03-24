@@ -1,0 +1,59 @@
+@import '../globalStyle.scss';
+
+.wrapper {
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.logo {
+  width: 100%;
+  padding: 5px;
+}
+
+.botLogo {
+  transform: rotateX(180deg);
+}
+
+.content {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 280ms;
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper:hover .content {
+  transform: rotateX(90deg);
+}
+
+.front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px white;
+  transform: translateZ(40px);
+  pointer-events: none;
+}
+
+.bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  transform: translateZ(40px) rotateX(90deg);
+  pointer-events: none; 
+}

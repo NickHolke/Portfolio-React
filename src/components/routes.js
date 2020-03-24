@@ -6,6 +6,7 @@ import Bar from './bar/bar';
 import Photo from './photo/photo';
 import Portfolio from './portfolio/portfolio';
 import Contact from './contact/contact';
+import BottomLink from './bottomLink/bottomLink';
 
 export {
   About,
@@ -15,5 +16,6 @@ export {
   Bar,
   Photo,
   Portfolio,
-  Contact
+  Contact,
+  BottomLink,
 }

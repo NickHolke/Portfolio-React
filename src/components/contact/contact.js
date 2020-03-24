@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { formWrapper, wrapper, title, titleText, input, submit } from './contact.module.scss';
+import { formWrapper, wrapper, title, titleText, input, submit, linksWrapper } from './contact.module.scss';
 import * as emailjs from 'emailjs-com';
+import { BottomLink } from '../routes';
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -69,6 +70,10 @@ const Contact = () => {
         />
         <input className={submit} type='submit' value='SUBMIT'/>
       </form>
+      <div className={linksWrapper}>
+        <BottomLink srcFront='media/github.svg' srcTop='media/github_blue.svg' alt='github'/>
+        <BottomLink srcFront='media/linkedin_white.svg' srcTop='media/linkedin_blue.svg' alt='linkedin'/>
+      </div>
     </div>
   )
 }

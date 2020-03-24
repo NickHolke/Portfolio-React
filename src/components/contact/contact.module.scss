@@ -17,7 +17,6 @@ textarea {
   resize: none;
 }
 
-
 .formWrapper {
   margin: auto;
   display: flex;
@@ -30,7 +29,7 @@ textarea {
 .wrapper {
   background: $blue;
   // background: #285059;
-  padding: 0px 40px 0px 40px;
+  padding: 0px 40px 40px 40px;
 }
 
 .title {
@@ -62,5 +61,9 @@ textarea {
     color: $pink;
     border: 2px solid $pink;
   }
+}
 
+.linksWrapper {
+  display: flex;
+  justify-content: center;
 }
