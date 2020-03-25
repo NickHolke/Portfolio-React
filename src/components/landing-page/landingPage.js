@@ -25,13 +25,15 @@ const LandingPage = () => {
 
   return (
     <div id="home" className={landingPage}>
-      <div className={topWrapper}>
+      <p>Hi I'm Nick Holke.</p>
+      <p>I'm a software engineer.</p>
+      {/* <div className={topWrapper}>
         <h1 className={topTextClass}>Hello I'm Nick Holke.</h1>
       </div>
       <div className={botWrapper}>
         <h1 className={botTextClass}>I'm a software engineer.</h1>
         V
-      </div>
+      </div> */}
     </div>
   )
 }
