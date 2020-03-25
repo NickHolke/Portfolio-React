@@ -1,19 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import {title, portfolioSection, projectsWrapper, videoWrapper, bgColor, bgShow, showWrapper} from './portfolio.module.scss';
+import {title, portfolioSection, projectsWrapper, videoWrapper, bgColor,} from './portfolio.module.scss';
 import {data} from './mockData';
 import Project from '../project/project';
 import { useInView } from 'react-intersection-observer';
-import classNames from 'classnames';
 
 const Portfolio = (props) => {
   const [projects, setProjects] = useState(data);
   const [showProjects, setShowProjects] = useState(false);
-  const [ref, inView, entry] = useInView();
+  const [ref, inView,] = useInView();
   const [video, setVideo] = useState('');
-  const [videoClass, setVideoClass] = useState(videoWrapper);
-  const [bgClass, setBgClass] = useState(bgColor);
   const [showVideo, setShowVideo] = useState(false);
-  const [showControls, setShowControls] = useState(false);
 
   const videoHandler = (video) => {
     setVideo(video);
@@ -26,28 +22,21 @@ const Portfolio = (props) => {
     }
   }, [inView])
 
-  useEffect(() => {
-    if (showVideo) {
-      setTimeout(() => {
-        setVideoClass(classNames(videoWrapper, showWrapper));
-        setBgClass(classNames(bgColor, bgShow));
-      }, 50)
-    } else {
-      setVideoClass(videoWrapper)
-      setBgClass(bgColor);
-    }
-  }, [showVideo])
-
   return (
     <div id="portfolio-section" className={portfolioSection}>
       {showVideo &&
       <>
-        <div className={videoClass}>
-          <video controls={showControls} onLoadedData={() => setShowControls(true)}>
-            <source src={video} type="video/mp4"/>
-          </video>
+        <div className={videoWrapper}>
+          <iframe 
+            title="video-demo"
+            width="560" 
+            height="315" 
+            src={video} 
+            frameborder="0" 
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen />
         </div>
-      <div className={bgClass} onClick={()=>setShowVideo(false)}>
+      <div className={bgColor} onClick={()=>setShowVideo(false)}>
       </div>
       </>
       }

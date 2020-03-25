@@ -7,14 +7,14 @@ const data = [
     subTitle: 'React, Styled Components, MySQL',
     img: robinhoodPhoto,
     link: 'https://github.com/HRSF124-JANK/Robinhood-TradeStock',
-    video: 'media/robinhood.mp4',
+    video: "https://www.youtube.com/embed/dAPOzEWJetI",
   },
   {
     title: 'Hotel Listing App',
     subTitle: 'PostgreSQL, Node.js, AWS',
     img: hotelPhoto,
     link: 'https://github.com/MEND-SF/Photogallery',
-    video: 'https://youtu.be/a6hKL8eXy04',
+    video: 'https://www.youtube.com/embed/a6hKL8eXy04',
   },
   {
     title: 'Reel Rating',
