@@ -33,7 +33,6 @@ const LandingPage = () => {
         V
       </div>
     </div>
-    
   )
 }
 

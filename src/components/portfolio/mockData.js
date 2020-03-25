@@ -1,15 +1,18 @@
+import hotelPhoto from './hotel_photo.png';
+import robinhoodPhoto from './robinhood.png';
+
 const data = [
   {
     title: 'Stock Trading App',
     subTitle: 'React, Styled Components, MySQL',
-    img: 'media/robinhood.png',
+    img: robinhoodPhoto,
     link: 'https://github.com/HRSF124-JANK/Robinhood-TradeStock',
     video: 'media/robinhood.mp4',
   },
   {
     title: 'Hotel Listing App',
     subTitle: 'PostgreSQL, Node.js, AWS',
-    img: 'media/hotel_photo.png',
+    img: hotelPhoto,
     link: 'https://github.com/MEND-SF/Photogallery',
     video: 'https://youtu.be/a6hKL8eXy04',
   },

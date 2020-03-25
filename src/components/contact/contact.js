@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import { formWrapper, wrapper, title, titleText, input, submit, linksWrapper } from './contact.module.scss';
 import * as emailjs from 'emailjs-com';
 import { BottomLink } from '../routes';
+import githubWhite from './github.svg';
+import githubBlue from './github_blue.svg';
+import linkedinWhite from './linkedin_white_.svg';
+import linkedinBlue from './linkedin_blue_.svg';
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -72,13 +76,13 @@ const Contact = () => {
       </form>
       <div className={linksWrapper}>
         <BottomLink 
-          srcFront='media/github.svg' 
-          srcTop='media/github_blue.svg' 
+          srcFront={githubWhite}
+          srcTop={githubBlue} 
           alt='github'
           href='https://github.com/NickHolke'/>
         <BottomLink 
-          srcFront='media/linkedin_white_.svg' 
-          srcTop='media/linkedin_blue_.svg' 
+          srcFront={linkedinWhite}
+          srcTop={linkedinBlue}
           alt='linkedin'
           href='https://www.linkedin.com/in/nick-holke/'/>
       </div>

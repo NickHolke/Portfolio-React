@@ -11,6 +11,8 @@ import {
   subTitle,
 } from './project.module.scss';
 import classNames from 'classnames';
+import youtubeIcon from './youtube.svg';
+import githubIcon from './github.svg';
 
 const Project = ({ project, show, delay, videoHandler }) => {
   const [showText, setShowText] = useState(false);
@@ -33,9 +35,9 @@ const Project = ({ project, show, delay, videoHandler }) => {
           <p className={subTitle}>{project.subTitle}</p>
         </div>
         <div className={iconsClass}>
-          <img className={icon} src='media/youtube.svg' alt='video' onClick={()=>videoHandler(project.video)}/>
+          <img className={icon} src={youtubeIcon} alt='video' onClick={()=>videoHandler(project.video)}/>
           <a href={project.link} target="_blank">
-            <img className={icon} src='media/github.svg' alt='github'/>
+            <img className={icon} src={githubIcon} alt='github'/>
           </a>
         </div>
       </div>
