@@ -14,7 +14,17 @@
 }
 
 .button {
-  font-style: $titleFont;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 20px;
+  padding: 10px 10px 10px 10px;
+  background: none;
+  outline: none;
+  border: 2px solid white;
+  color: white;
+  font-family: $font;
+  opacity: 0;
+  animation: show 700ms ease forwards 2.3s;
 }
 
 .svgTitle { 
@@ -254,6 +264,12 @@
   }
   to {
     fill: white;
+  }
+}
+
+@keyframes show {
+  to {
+    opacity: 1;
   }
 }
 
