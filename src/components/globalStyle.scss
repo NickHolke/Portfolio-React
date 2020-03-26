@@ -13,3 +13,26 @@ $titleFont: 'Montserrat';
 $font: 'Raleway';
 $fontColor: #616161;
 $titleColor: #505050;
+
+@mixin triangle-header($background){
+  position: relative;
+  &:before, &:after {
+    background: $background;
+    position: absolute;
+    content: "";
+    top: -50px;
+    width: 50%;
+    height: 20%;
+    z-index: 1;
+  }
+
+  &:before {
+    left: 0;
+    transform: skewY(6deg);
+  }
+
+  &:after {
+    right: 0;
+    transform: skewY(-6deg);
+  }
+}
