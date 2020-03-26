@@ -21,15 +21,16 @@ const Graph = () => {
 
   return (
     <div ref={ref} className={wrapperClass}>
-      <Bar width='90%' delay='900ms' name='REACT' show={showBars}/>
-      <Bar width='90%' delay='1000ms' name='JAVASCRIPT' show={showBars}/>
-      <Bar width='80%' delay='1100ms' name='NATIVE' show={showBars}/>
-      <Bar width='80%' delay='1200ms' name='PING-PONG' show={showBars}/>
-      <Bar width='80%' delay='1200ms' name='CSS' show={showBars}/>
-      <Bar width='80%' delay='1300ms' name='HTML' show={showBars}/>
-      <Bar width='75%' delay='1400ms' name='NODE' show={showBars}/>
-      <Bar width='70%' delay='1500ms' name='MySQL' show={showBars}/>
-      <Bar width='70%' delay='1600ms' name='Mongo' show={showBars}/>
+      <Bar width='95%' delay='900ms' name='JAVASCRIPT' show={showBars}/>
+      <Bar width='95%' delay='1000ms' name='REACT' show={showBars}/>
+      <Bar width='90%' delay='1100ms' name='HTML/CSS' show={showBars}/>
+      <Bar width='100%' delay='1200ms' name='PING-PONG' show={showBars}/>
+      <Bar width='80%' delay='1300ms' name='NODE' show={showBars}/>
+      <Bar width='78%' delay='1400ms' name='POSTGRES' show={showBars}/>
+      <Bar width='78%' delay='1500ms' name='REACT NATIVE' show={showBars}/>
+      <Bar width='75%' delay='1600ms' name='MYSQL' show={showBars}/>
+      <Bar width='75%' delay='1700ms' name='MONGO' show={showBars}/>
+      <Bar width='75%' delay='1800ms' name='AWS' show={showBars}/>
     </div>
   );
 }

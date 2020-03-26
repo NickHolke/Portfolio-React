@@ -27,6 +27,9 @@ h2 {
 .wrapper {
   flex: 4;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  // max-width: 980px;
 }
 
 .photoWrapper {
@@ -34,9 +37,13 @@ h2 {
   flex: 1;
   display: flex;
   justify-content: center;
+  min-width: 500px;
+  max-width: 50%;
 }
 
 .skillsWrapper {
   margin-top: 60px;
+  min-width: 500px;
+  max-width: 50%;
   flex: 1;
 }
