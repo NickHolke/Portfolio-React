@@ -8,11 +8,12 @@
 
 .content {
   position: relative;
-  padding: 0px 80px 0px 80px;
+  padding: 0px 80px;
   z-index: 2;
 }
 
 .title {
+  position: relative;
   padding: 80px 0px 60px 0px;
   display: flex;
   flex: 1;
@@ -22,13 +23,34 @@
 
 .projectsWrapper {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+.mobileInfo {
+  position: absolute;
+  font-size: 20px;
+  top: 17%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+
+@media(max-width: 1001px) {
+  .content {
+    padding: 0px 60px;
+  }
 }
 
 @media(max-width: 630px) {
   .content {
     padding: 0px 40px 0px 40px;
+  }
+}
+
+@media(max-width: 400px) {
+  .mobileInfo{
+    display: block;
   }
 }
 

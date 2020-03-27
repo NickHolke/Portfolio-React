@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import {title, portfolioSection, projectsWrapper, content} from './portfolio.module.scss';
+import {title, portfolioSection, projectsWrapper, content, mobileInfo} from './portfolio.module.scss';
 import {data} from './mockData';
 import Project from '../project/project';
 import { useInView } from 'react-intersection-observer';
@@ -21,6 +21,7 @@ const Portfolio = () => {
         <div className={title}>
           <h2>Portfolio</h2>
         </div>
+        <p className={mobileInfo}>(tap photo for details)</p>
         <div ref={ref} className={projectsWrapper}>
           {projects.map((project, idx) => <Project show={showProjects} key={idx} project={project} delay={100 * idx + 'ms'} />)}
         </div>

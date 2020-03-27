@@ -60,15 +60,15 @@
 .iconsWrapper {
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   transform: translateY(40px);
   transition: transform 300ms ease-in-out;
 }
 
 .icon {
   cursor: pointer;
-  height: 60px;
-  width: 60px;
+  height: 70px;
+  width: 70px;
   margin: 0px 20px 0px 20px;
 }
 
@@ -79,5 +79,54 @@
 .showClass {
   transform: translateY(0);
   opacity: 1;
+}
+
+@media (max-width: 800px) {
+  .wrapper {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  .wrapper {
+    height: 243px;
+    width: 360px;
+  }
+  .infoWrapper {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 470px) {
+
+  .wrapper {
+    height: 196px;
+    width: 290px;
+    min-height: 196px;
+    min-width: 290px;
+  }
+
+  .infoWrapper {
+    font-size: 28px;
+  }
+
+  .title {
+    margin-top: 30px;
+  }
+
+  .subTitle {
+    font-size: 16px;
+  }
+
+  .iconsWrapper {
+    margin-bottom: 20px;
+  }
+
+  .icon {
+    height: 55px;
+    width: 55px;
+  }
+
+  
 }
 
