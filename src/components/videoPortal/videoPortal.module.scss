@@ -1,0 +1,44 @@
+
+iframe {
+  position: fixed;
+  z-index: 7;
+  width: 800px;
+  height: 500px;
+  margin-top: -250px;
+  margin-left: -400px;
+  top: 50%;
+  left: 50%;
+}
+
+.background {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(242, 242, 242);
+  opacity: 0.8;
+  z-index: 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 845px) {
+  iframe {
+    width: 640px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -320px;
+  }
+}
+
+@media (max-width: 680px) {
+  iframe {
+    width: 360px;
+    height: 225px;
+    margin-top: -112px;
+    margin-left: -180px;
+  }
+}
+

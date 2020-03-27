@@ -68,21 +68,21 @@ video {
   outline: none;
 }
 
-iframe {
-  position: fixed;
-  z-index: 12;
-  min-width: 800px;
-  height: 500px;
-  top: 50%;
-  left: 50%;
-  margin-top: -250px;
-  margin-left: -400px;
-  // left: 0;
-  // right: 0;
-  // margin: 100px auto 0px auto;
-  border-radius: 5px;
-  // box-shadow: 2px 2px 8px grey;
-}
+// iframe {
+//   position: fixed;
+//   z-index: 12;
+//   min-width: 800px;
+//   height: 500px;
+//   top: 50%;
+//   left: 50%;
+//   margin-top: -250px;
+//   margin-left: -400px;
+//   // left: 0;
+//   // right: 0;
+//   // margin: 100px auto 0px auto;
+//   border-radius: 5px;
+//   // box-shadow: 2px 2px 8px grey;
+// }
 
 @media(max-width: 630px) {
   .content {

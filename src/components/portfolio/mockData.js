@@ -7,21 +7,21 @@ const data = [
     subTitle: 'React, Styled Components, MySQL',
     img: robinhoodPhoto,
     link: 'https://github.com/HRSF124-JANK/Robinhood-TradeStock',
-    video: "https://www.youtube.com/embed/dAPOzEWJetI?autoplay=1",
+    video: "https://www.youtube.com/embed/dAPOzEWJetI",
   },
-  {
-    title: 'Hotel Listing App',
-    subTitle: 'PostgreSQL, Node.js, AWS',
-    img: hotelPhoto,
-    link: 'https://github.com/MEND-SF/Photogallery',
-    video: 'https://www.youtube.com/embed/a6hKL8eXy04?autoplay=1',
-  },
-  {
-    title: 'Reel Rating',
-    subTitle: 'React Hooks, Redux, MongoDB',
-    img: 'https://colorlib.com/wp/wp-content/uploads/sites/2/HTML-web-hosting-website-templates.jpg',
-    link: 'https://github.com/NickHolke/ReelRating',
-  },
+  // {
+  //   title: 'Hotel Listing App',
+  //   subTitle: 'PostgreSQL, Node.js, AWS',
+  //   img: hotelPhoto,
+  //   link: 'https://github.com/MEND-SF/Photogallery',
+  //   video: 'https://www.youtube.com/embed/a6hKL8eXy04?autoplay=1',
+  // },
+  // {
+  //   title: 'Reel Rating',
+  //   subTitle: 'React Hooks, Redux, MongoDB',
+  //   img: 'https://colorlib.com/wp/wp-content/uploads/sites/2/HTML-web-hosting-website-templates.jpg',
+  //   link: 'https://github.com/NickHolke/ReelRating',
+  // },
 ]
 
 export {

@@ -13,6 +13,7 @@ import {
 import classNames from 'classnames';
 import youtubeIcon from './youtube.svg';
 import githubIcon from './github.svg';
+import { VideoPortal } from '../routes';
 
 const Project = ({ project, show, delay, videoHandler }) => {
   const [showText, setShowText] = useState(false);
@@ -23,12 +24,7 @@ const Project = ({ project, show, delay, videoHandler }) => {
 
   return (
     <>
-    {/* <iframe 
-      title="video-demo"
-      src={project.video} 
-      frameBorder="0" 
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-      allowFullScreen /> */}
+      <VideoPortal video={project.video}/>
     <div 
       className={wrapperClass} 
       style={{transitionDelay: delay}} 

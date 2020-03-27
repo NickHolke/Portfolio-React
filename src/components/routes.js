@@ -7,6 +7,7 @@ import Photo from './photo/photo';
 import Portfolio from './portfolio/portfolio';
 import Contact from './contact/contact';
 import BottomLink from './bottomLink/bottomLink';
+import VideoPortal from './videoPortal/videoPortal';
 
 export {
   About,
@@ -18,4 +19,5 @@ export {
   Portfolio,
   Contact,
   BottomLink,
+  VideoPortal,
 }

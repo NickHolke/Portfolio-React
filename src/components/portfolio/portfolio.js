@@ -28,12 +28,12 @@ const Portfolio = (props) => {
         {showVideo &&
         <>
           {/* <div className={videoWrapper}> */}
-            <iframe 
+            {/* <iframe 
               title="video-demo"
               src={video} 
               frameBorder="0" 
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-              allowFullScreen />
+              allowFullScreen /> */}
           {/* </div> */}
         <div className={bgColor} onClick={()=>setShowVideo(false)}>
         </div>
