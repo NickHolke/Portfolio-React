@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Portfolio-React/static/css/main.5fae9e0f.chunk.css",
-    "main.js": "/Portfolio-React/static/js/main.d7bd58c9.chunk.js",
-    "main.js.map": "/Portfolio-React/static/js/main.d7bd58c9.chunk.js.map",
+    "main.css": "/Portfolio-React/static/css/main.0de51f12.chunk.css",
+    "main.js": "/Portfolio-React/static/js/main.0e6def4d.chunk.js",
+    "main.js.map": "/Portfolio-React/static/js/main.0e6def4d.chunk.js.map",
     "runtime-main.js": "/Portfolio-React/static/js/runtime-main.9ae2701b.js",
     "runtime-main.js.map": "/Portfolio-React/static/js/runtime-main.9ae2701b.js.map",
-    "static/js/2.9dcbbc2b.chunk.js": "/Portfolio-React/static/js/2.9dcbbc2b.chunk.js",
-    "static/js/2.9dcbbc2b.chunk.js.map": "/Portfolio-React/static/js/2.9dcbbc2b.chunk.js.map",
+    "static/js/2.27a7c189.chunk.js": "/Portfolio-React/static/js/2.27a7c189.chunk.js",
+    "static/js/2.27a7c189.chunk.js.map": "/Portfolio-React/static/js/2.27a7c189.chunk.js.map",
     "index.html": "/Portfolio-React/index.html",
-    "precache-manifest.5f0a1638e13a81bb9d222bf4d81bf6f1.js": "/Portfolio-React/precache-manifest.5f0a1638e13a81bb9d222bf4d81bf6f1.js",
+    "precache-manifest.92598a430457e825510a9259061333a6.js": "/Portfolio-React/precache-manifest.92598a430457e825510a9259061333a6.js",
     "service-worker.js": "/Portfolio-React/service-worker.js",
-    "static/css/main.5fae9e0f.chunk.css.map": "/Portfolio-React/static/css/main.5fae9e0f.chunk.css.map",
-    "static/js/2.9dcbbc2b.chunk.js.LICENSE.txt": "/Portfolio-React/static/js/2.9dcbbc2b.chunk.js.LICENSE.txt",
+    "static/css/main.0de51f12.chunk.css.map": "/Portfolio-React/static/css/main.0de51f12.chunk.css.map",
+    "static/js/2.27a7c189.chunk.js.LICENSE.txt": "/Portfolio-React/static/js/2.27a7c189.chunk.js.LICENSE.txt",
     "static/media/github.svg": "/Portfolio-React/static/media/github.27e94111.svg",
     "static/media/github_blue.svg": "/Portfolio-React/static/media/github_blue.00dd29ce.svg",
     "static/media/hotel_photo.png": "/Portfolio-React/static/media/hotel_photo.e4444a31.png",
@@ -23,8 +23,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.9ae2701b.js",
-    "static/js/2.9dcbbc2b.chunk.js",
-    "static/css/main.5fae9e0f.chunk.css",
-    "static/js/main.d7bd58c9.chunk.js"
+    "static/js/2.27a7c189.chunk.js",
+    "static/css/main.0de51f12.chunk.css",
+    "static/js/main.0e6def4d.chunk.js"
   ]
 }
