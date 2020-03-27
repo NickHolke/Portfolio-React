@@ -22,6 +22,13 @@ const Project = ({ project, show, delay, videoHandler }) => {
   let titleClass = classNames(title, {[moveText]: showText});
 
   return (
+    <>
+    {/* <iframe 
+      title="video-demo"
+      src={project.video} 
+      frameBorder="0" 
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+      allowFullScreen /> */}
     <div 
       className={wrapperClass} 
       style={{transitionDelay: delay}} 
@@ -43,6 +50,7 @@ const Project = ({ project, show, delay, videoHandler }) => {
       </div>
       
     </div>
+    </>
   )
 };
 

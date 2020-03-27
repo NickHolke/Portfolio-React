@@ -28,7 +28,10 @@ textarea {
 
 .wrapper {
   background: $blue;
+  position: relative;
+  z-index: 1;
   @include triangle-header($blue);
+  
 }
 
 .content {

@@ -23,16 +23,18 @@
 .projectsWrapper {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .bgColor {
-  position: absolute;
-  left: 0;
-  height: 110%;
+  position: fixed;
+  height: 100%;
   width: 100%;
+  top: 0;
+  left: 0;
   background: rgb(242, 242, 242);
   opacity: 0.8;
-  z-index: 2;
+  z-index: 6;
 }
 
 .bgShow {
@@ -67,15 +69,25 @@ video {
 }
 
 iframe {
-  position: absolute;
-  z-index: 3;
+  position: fixed;
+  z-index: 12;
   min-width: 800px;
   height: 500px;
-  left: 0;
-  right: 0;
-  margin: 100px auto 0px auto;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -400px;
+  // left: 0;
+  // right: 0;
+  // margin: 100px auto 0px auto;
   border-radius: 5px;
-  box-shadow: 2px 2px 8px grey;
+  // box-shadow: 2px 2px 8px grey;
+}
+
+@media(max-width: 630px) {
+  .content {
+    padding: 0px 40px 0px 40px;
+  }
 }
 
 
