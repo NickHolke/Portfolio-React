@@ -43,9 +43,19 @@ $radius: 7px;
   left: 4px;
 }
 
+@media (max-width: 1000px) {
+  .text {
+    top: 3px;
+    left: 6px;
+  }
+  .wrapper {
+    height: 26px;
+    margin-bottom: 18px;
+  }
+}
+
 @media (max-width: 450px) {
   .text {
-    font-size: 16px;
     top: 3px;
     left: 6px;
   }
