@@ -17,14 +17,13 @@ import { VideoPortal } from '../routes';
 
 const Project = ({ project, show, delay, videoHandler }) => {
   const [showText, setShowText] = useState(false);
+  const [showVideo, setShowVideo] = useState(false);
 
   let wrapperClass = classNames(wrapper, {[showClass]: show});
   let iconsClass = classNames(iconsWrapper, {[moveText]: showText});
   let titleClass = classNames(title, {[moveText]: showText});
 
   return (
-    <>
-      <VideoPortal video={project.video}/>
     <div 
       className={wrapperClass} 
       style={{transitionDelay: delay}} 
@@ -38,15 +37,14 @@ const Project = ({ project, show, delay, videoHandler }) => {
           <p className={subTitle}>{project.subTitle}</p>
         </div>
         <div className={iconsClass}>
-          <img className={icon} src={youtubeIcon} alt='video' onClick={()=>videoHandler(project.video)}/>
+          <img className={icon} src={youtubeIcon} alt='video' onClick={()=>setShowVideo(true)}/>
           <a href={project.link} target="_blank">
             <img className={icon} src={githubIcon} alt='github'/>
           </a>
         </div>
       </div>
-      
+      {showVideo && <VideoPortal video={project.video} setShowVideo={setShowVideo}/>}
     </div>
-    </>
   )
 };
 

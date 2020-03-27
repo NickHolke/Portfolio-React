@@ -1,21 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { background, iframe, container } from './videoPortal.module.scss';  
+import { background, iframe, fixedContainer, iframeContainer } from './videoPortal.module.scss';  
 
-const VideoPortal = ({ video }) => {
+const VideoPortal = ({ video, setShowVideo }) => {
   return ReactDOM.createPortal(
     <>
-    
-          <iframe 
-            className={iframe}
-            title="video-demo"
-            src={video} 
-            frameBorder="0" 
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-            allowFullScreen
-          />
-      <div className={background}>
+      <div className={fixedContainer}>
+            <div className={iframeContainer}>
+              <iframe 
+                className={iframe}
+                title="video-demo"
+                src={video} 
+                frameBorder="0" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen
+              />
+            </div>
       </div>
+      <div className={background} onClick={()=>setShowVideo(false)}></div>
     </>,
     document.body
   )
