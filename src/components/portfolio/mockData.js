@@ -18,9 +18,10 @@ const data = [
   },
   {
     title: 'Reel Rating',
-    subTitle: 'React Hooks, Redux, MongoDB',
+    subTitle: 'React Hooks, MongoDB',
     img: 'https://colorlib.com/wp/wp-content/uploads/sites/2/HTML-web-hosting-website-templates.jpg',
     link: 'https://github.com/NickHolke/ReelRating',
+    video: 'https://www.youtube.com/embed/y_Jdo57sM2g?autoplay=1',
   },
 ]
 

@@ -1,0 +1,20 @@
+@import '../globalStyle.scss';
+
+.wrapper {
+  position: relative;
+  font-family: $font;
+  background: #04c986;
+  color: #157051;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #04c986;
+  margin-top: 4px;
+}
+
+.close {
+  position: absolute;
+  right: 10px;
+  font-weight: bold;
+  padding: 2px;
+  cursor: pointer;
+}

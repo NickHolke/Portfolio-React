@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { formWrapper, wrapper, title, titleText, input, submit, linksWrapper, content} from './contact.module.scss';
 import * as emailjs from 'emailjs-com';
-import { BottomLink } from '../routes';
+import { BottomLink, SuccessMessage } from '../routes';
 import githubWhite from './github.svg';
 import githubBlue from './github_blue.svg';
 import linkedinWhite from './linkedin_white_.svg';
@@ -12,6 +12,8 @@ const Contact = () => {
   const [subject, setSubject] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [showSuccess, setShowSuccess] = useState(false);
+  const [showError, setShowError] = useState(false);
 
   const resetHooks = () => {
     setName('');
@@ -22,21 +24,27 @@ const Contact = () => {
   const submitHandler = (e) => {
     e.preventDefault();
 
-    let templateParams = {
-      from_name: email,
-      to_name: 'nickholke@gmail.com',
-      subject: subject,
-      message_html: message,
+    if (name === '' || email === '' || message === '') {
+      setShowError(true);
+    } else {
+      let templateParams = {
+        from_name: email,
+        to_name: 'nickholke@gmail.com',
+        subject: subject,
+        message_html: message,
+      }
+  
+      emailjs.send(
+        'gmail',
+        'template_z4G7eMor',
+        templateParams,
+        'user_h4jBBfPVyh1aKLrWcGfuV',
+      )
+  
+      resetHooks();
+      setShowSuccess(true);
+      setShowError(false);
     }
-
-    emailjs.send(
-      'gmail',
-      'template_z4G7eMor',
-      templateParams,
-      'user_h4jBBfPVyh1aKLrWcGfuV',
-    )
-
-    resetHooks();
   }
   return (
     <div id="contact-section" className={wrapper}>
@@ -73,6 +81,7 @@ const Contact = () => {
             onChange={(e) => setMessage(e.target.value)}
             placeholder='Enter Message'
           />
+          {showSuccess && <SuccessMessage setShowSuccess={setShowSuccess}/>}
           <input className={submit} type='submit' value='SUBMIT'/>
         </form>
         <div className={linksWrapper}>

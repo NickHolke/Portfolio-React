@@ -30,7 +30,7 @@
 .mobileInfo {
   position: absolute;
   font-size: 20px;
-  top: 17%;
+  top: 16%;
   left: 50%;
   transform: translateX(-50%);
   display: none;
@@ -51,6 +51,14 @@
 @media(max-width: 400px) {
   .mobileInfo{
     display: block;
+  }
+
+  .title {
+    padding: 60px 0px 60px 0px;
+  }
+
+  .portfolioSection {
+    padding-bottom: 100px;
   }
 }
 

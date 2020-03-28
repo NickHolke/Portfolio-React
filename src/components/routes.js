@@ -8,6 +8,7 @@ import Portfolio from './portfolio/portfolio';
 import Contact from './contact/contact';
 import BottomLink from './bottomLink/bottomLink';
 import VideoPortal from './videoPortal/videoPortal';
+import SuccessMessage from './successMessage/successMessage';
 
 export {
   About,
@@ -20,4 +21,5 @@ export {
   Contact,
   BottomLink,
   VideoPortal,
+  SuccessMessage,
 }
