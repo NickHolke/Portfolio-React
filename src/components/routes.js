@@ -9,6 +9,7 @@ import Contact from './contact/contact';
 import BottomLink from './bottomLink/bottomLink';
 import VideoPortal from './videoPortal/videoPortal';
 import SuccessMessage from './successMessage/successMessage';
+import ErrorMessage from './errorMessage/errorMessage';
 
 export {
   About,
@@ -22,4 +23,5 @@ export {
   BottomLink,
   VideoPortal,
   SuccessMessage,
+  ErrorMessage,
 }

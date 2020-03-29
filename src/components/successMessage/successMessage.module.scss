@@ -9,6 +9,9 @@
   padding: 10px;
   border: 1px solid #04c986;
   margin-top: 4px;
+  border-radius: 2px;
+  opacity: 0;
+  animation: show-anim .8s ease forwards;
 }
 
 .close {
@@ -17,4 +20,10 @@
   font-weight: bold;
   padding: 2px;
   cursor: pointer;
+}
+
+@keyframes show-anim {
+  to {
+    opacity: 1;
+  }
 }
