@@ -16,6 +16,8 @@
 .link {
   margin-top: -5px;
   padding: 0;
+  pointer-events: none;
+  animation: show 700ms ease forwards 2.3s;
 }
 
 .button {
@@ -275,6 +277,7 @@
 @keyframes show {
   to {
     opacity: 1;
+    pointer-events: auto;
   }
 }
 

@@ -15,7 +15,7 @@ $radius: 7px;
   transform: scaleX(0);
   opacity: 0;
   transform-origin: left;
-  transition: transform 700ms cubic-bezier(.5,.25,.51,1), opacity 700ms ease-in-out;
+  transition: transform 600ms cubic-bezier(.5,.25,.51,1), opacity 600ms ease-in-out;
 }
 
 .barGrow {
