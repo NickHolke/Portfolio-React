@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/Portfolio-React/static/css/main.0de51f12.chunk.css",
-    "main.js": "/Portfolio-React/static/js/main.0e6def4d.chunk.js",
-    "main.js.map": "/Portfolio-React/static/js/main.0e6def4d.chunk.js.map",
+    "main.css": "/Portfolio-React/static/css/main.4addc7d9.chunk.css",
+    "main.js": "/Portfolio-React/static/js/main.3a3a266e.chunk.js",
+    "main.js.map": "/Portfolio-React/static/js/main.3a3a266e.chunk.js.map",
     "runtime-main.js": "/Portfolio-React/static/js/runtime-main.9ae2701b.js",
     "runtime-main.js.map": "/Portfolio-React/static/js/runtime-main.9ae2701b.js.map",
-    "static/js/2.27a7c189.chunk.js": "/Portfolio-React/static/js/2.27a7c189.chunk.js",
-    "static/js/2.27a7c189.chunk.js.map": "/Portfolio-React/static/js/2.27a7c189.chunk.js.map",
+    "static/js/2.217cef09.chunk.js": "/Portfolio-React/static/js/2.217cef09.chunk.js",
+    "static/js/2.217cef09.chunk.js.map": "/Portfolio-React/static/js/2.217cef09.chunk.js.map",
     "index.html": "/Portfolio-React/index.html",
-    "precache-manifest.92598a430457e825510a9259061333a6.js": "/Portfolio-React/precache-manifest.92598a430457e825510a9259061333a6.js",
+    "precache-manifest.fd471c429522f7daa3eb8809d1415b46.js": "/Portfolio-React/precache-manifest.fd471c429522f7daa3eb8809d1415b46.js",
     "service-worker.js": "/Portfolio-React/service-worker.js",
-    "static/css/main.0de51f12.chunk.css.map": "/Portfolio-React/static/css/main.0de51f12.chunk.css.map",
-    "static/js/2.27a7c189.chunk.js.LICENSE.txt": "/Portfolio-React/static/js/2.27a7c189.chunk.js.LICENSE.txt",
+    "static/css/main.4addc7d9.chunk.css.map": "/Portfolio-React/static/css/main.4addc7d9.chunk.css.map",
+    "static/js/2.217cef09.chunk.js.LICENSE.txt": "/Portfolio-React/static/js/2.217cef09.chunk.js.LICENSE.txt",
+    "static/media/ReelRating.png": "/Portfolio-React/static/media/ReelRating.af6f8a32.png",
+    "static/media/error.svg": "/Portfolio-React/static/media/error.34c3adc3.svg",
     "static/media/github.svg": "/Portfolio-React/static/media/github.27e94111.svg",
     "static/media/github_blue.svg": "/Portfolio-React/static/media/github_blue.00dd29ce.svg",
     "static/media/hotel_photo.png": "/Portfolio-React/static/media/hotel_photo.e4444a31.png",
@@ -23,8 +25,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.9ae2701b.js",
-    "static/js/2.27a7c189.chunk.js",
-    "static/css/main.0de51f12.chunk.css",
-    "static/js/main.0e6def4d.chunk.js"
+    "static/js/2.217cef09.chunk.js",
+    "static/css/main.4addc7d9.chunk.css",
+    "static/js/main.3a3a266e.chunk.js"
   ]
 }
