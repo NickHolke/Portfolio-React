@@ -6,7 +6,6 @@ import githubWhite from './github.svg';
 import githubBlue from './github_blue.svg';
 import linkedinWhite from './linkedin_white_.svg';
 import linkedinBlue from './linkedin_blue_.svg';
-import {useSpring, animated} from 'react-spring';
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -15,9 +14,6 @@ const Contact = () => {
   const [message, setMessage] = useState('');
   const [showSuccess, setShowSuccess] = useState(false);
   const [showError, setShowError] = useState(false);
-  const props = useSpring({height: 'auto', from: {height: 0}});
-  const AnimatedSuccessMessage = animated(SuccessMessage);
-
 
   const resetHooks = () => {
     setName('');
@@ -85,7 +81,7 @@ const Contact = () => {
             onChange={(e) => setMessage(e.target.value)}
             placeholder='Enter Message'
           />
-          {showSuccess && <AnimatedSuccessMessage style={props} setShowSuccess={setShowSuccess}/>}
+          {showSuccess && <SuccessMessage setShowSuccess={setShowSuccess}/>}
           {showError && <ErrorMessage setShowError={setShowError}/>}
           <input className={submit} type='submit' value='SUBMIT'/>
         </form>

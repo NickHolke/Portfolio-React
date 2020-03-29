@@ -5,7 +5,7 @@ import icon from './error.svg';
 const ErrorMessage = ({setShowError}) => (
   <div className={wrapper}>
     <img className={image} src={icon} alt="warning"/>
-    'Name', 'Email', and 'Message' can't be empty.
+    Name, Email, and Message cannot be empty.
     <span className={close} onClick={()=>setShowError(false)}>x</span>
   </div>
 )
