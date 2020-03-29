@@ -15,8 +15,15 @@
   border-radius: 30px;
   box-shadow: 1px 1px 4px grey;
   transform: translateY(150px);
-  opacity: 0;
+  opacity: 0.3;
   transition: transform 800ms ease-in-out, opacity 800ms ease-in-out;
+}
+
+:global(.visible) {
+  .wrapper {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .infoWrapper {
@@ -67,8 +74,8 @@
 
 .icon {
   cursor: pointer;
-  height: 70px;
-  width: 70px;
+  height: 65px;
+  width: 65px;
   margin: 0px 20px 0px 20px;
 }
 

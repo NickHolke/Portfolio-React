@@ -36,6 +36,11 @@
   display: none;
 }
 
+// .visible {
+//   transform: translateY(0);
+//   opacity: 1;
+// }
+
 @media(max-width: 1001px) {
   .content {
     padding: 0px 60px;
