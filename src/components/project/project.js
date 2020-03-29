@@ -5,7 +5,6 @@ import {
   infoWrapper, 
   title, 
   moveText, 
-  showClass, 
   icon, 
   iconsWrapper,
   subTitle,
@@ -15,17 +14,16 @@ import youtubeIcon from './youtube.svg';
 import githubIcon from './github.svg';
 import { VideoPortal } from '../routes';
 
-const Project = ({ project, show, delay,}) => {
+const Project = ({ project, delay,}) => {
   const [showText, setShowText] = useState(false);
   const [showVideo, setShowVideo] = useState(false);
 
-  let wrapperClass = classNames(wrapper, {[showClass]: show});
   let iconsClass = classNames(iconsWrapper, {[moveText]: showText});
   let titleClass = classNames(title, {[moveText]: showText});
 
   return (
     <div 
-      className={wrapperClass} 
+      className={wrapper} 
       style={{transitionDelay: delay}} 
       onMouseOver={()=>setShowText(true)} 
       onMouseLeave={()=>setShowText(false)}
