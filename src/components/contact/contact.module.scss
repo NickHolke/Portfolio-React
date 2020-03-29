@@ -38,12 +38,13 @@ textarea {
   z-index:2;
   padding: 0px 80px 40px 80px;
   min-width: 370px;
+  h2 {
+    padding: 0px 5px;
+  }
 }
 
 .title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
   color: white;
   padding-top: 80px;
   padding-bottom: 40px;

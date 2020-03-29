@@ -18,9 +18,6 @@ const Project = ({ project, delay,}) => {
   const [showText, setShowText] = useState(false);
   const [showVideo, setShowVideo] = useState(false);
 
-  let iconsClass = classNames(iconsWrapper, {[moveText]: showText});
-  let titleClass = classNames(title, {[moveText]: showText});
-
   return (
     <div 
       className={wrapper} 
@@ -30,11 +27,11 @@ const Project = ({ project, delay,}) => {
     >
       <img className={siteImage} src={project.img} alt='project-img'/>
       <div className={infoWrapper}>
-        <div className={titleClass}>
+        <div className={classNames(title, {[moveText]: showText})}>
           <p>{project.title}</p>
           <p className={subTitle}>{project.subTitle}</p>
         </div>
-        <div className={iconsClass}>
+        <div className={classNames(iconsWrapper, {[moveText]: showText})}>
           <img className={icon} src={youtubeIcon} alt='video' onClick={()=>setShowVideo(true)}/>
           <a href={project.link} target="_blank">
             <img className={icon} src={githubIcon} alt='github'/>

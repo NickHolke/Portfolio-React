@@ -10,15 +10,14 @@
   position: relative;
   padding: 0px 80px;
   z-index: 2;
+  h2 {
+    padding: 0px 5px;
+  }
 }
 
 .title {
-  position: relative;
   padding: 80px 0px 60px 0px;
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
 }
 
 .projectsWrapper {
@@ -35,11 +34,6 @@
   transform: translateX(-50%);
   display: none;
 }
-
-// .visible {
-//   transform: translateY(0);
-//   opacity: 1;
-// }
 
 @media(max-width: 1001px) {
   .content {

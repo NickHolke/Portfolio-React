@@ -5,7 +5,7 @@ h2 {
   font-weight: bold;
   font-size: 40px;
   color: $titleColor;
-  padding: 0px 5px 0px 8px;
+  
   border-bottom: 2px solid $titleColor;
 }
 
@@ -14,14 +14,13 @@ h2 {
   display: flex;
   flex-direction: column;
   padding: 80px 80px 160px 80px;
+  h2 {
+    padding: 0px 5px 0px 8px;
+  }
 }
 
 .title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  // padding-top: 80px;
-  padding-bottom: 0px;
+  @include flex-center;
 }
 
 .wrapper {
@@ -29,7 +28,6 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  // max-width: 980px;
 }
 
 .photoWrapper {
@@ -61,6 +59,7 @@ h2 {
 
   .photoWrapper {
     padding: 0px 30px;
+    font-size: 23px;
   }
 }
 

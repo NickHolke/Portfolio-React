@@ -36,3 +36,9 @@ $titleColor: #505050;
     transform: skewY(-6deg);
   }
 }
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

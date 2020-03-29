@@ -18,9 +18,7 @@
 }
 
 .bottom {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
   position: absolute;
   background: white;
   transform-origin: bottom;
@@ -36,11 +34,8 @@
   }
 }
 
-
 .front {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
   position: absolute;
   border: solid 2px white;
   width: 100%;

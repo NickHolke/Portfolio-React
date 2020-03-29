@@ -1,18 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import {title, portfolioSection, projectsWrapper, content, mobileInfo,} from './portfolio.module.scss';
-import {data} from './mockData';
+import {data} from './projectsData';
 import Project from '../project/project';
 import { useInView } from 'react-intersection-observer';
 import classNames from 'classnames';
 
-
-
 const Portfolio = () => {
   const [projects,] = useState(data);
   const [showProjects, setShowProjects] = useState(false);
-  const [ref, inView,] = useInView({
-    threshold: 0,
-  });
+  const [ref, inView,] = useInView({});
 
   useEffect(()=> {
     if (inView) {
