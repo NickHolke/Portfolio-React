@@ -15,7 +15,7 @@ import youtubeIcon from './youtube.svg';
 import githubIcon from './github.svg';
 import { VideoPortal } from '../routes';
 
-const Project = ({ project, show, delay, videoHandler }) => {
+const Project = ({ project, show, delay,}) => {
   const [showText, setShowText] = useState(false);
   const [showVideo, setShowVideo] = useState(false);
 
