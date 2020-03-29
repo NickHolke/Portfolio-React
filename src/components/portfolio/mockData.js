@@ -1,5 +1,6 @@
 import hotelPhoto from './hotel_photo.png';
 import robinhoodPhoto from './robinhood.png';
+import ratingPhoto from './ReelRating.png';
 
 const data = [
   {
@@ -19,7 +20,7 @@ const data = [
   {
     title: 'Reel Rating',
     subTitle: 'React Hooks, MongoDB',
-    img: 'https://colorlib.com/wp/wp-content/uploads/sites/2/HTML-web-hosting-website-templates.jpg',
+    img: ratingPhoto,
     link: 'https://github.com/NickHolke/ReelRating',
     video: 'https://www.youtube.com/embed/y_Jdo57sM2g?autoplay=1',
   },
