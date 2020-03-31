@@ -7,7 +7,7 @@ import mediaImage from './media_img.png';
 function App() {
   return (
     <>
-      <Helmet>
+      {/* <Helmet>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Nick Holke Portfolio"/>
@@ -15,10 +15,9 @@ function App() {
         <meta property='og:description' content="An online portfolio."/>
         <meta property="og:image" content={mediaImage}/>
         <meta property="og:url" content="https://www.nickholke.com/"/>
-        {/* <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> */}
         <link rel="icon" href="./Nick_favicon.png" />
         <title>Nick Holke</title>
-      </Helmet>
+      </Helmet> */}
       <LandingPage />
       <NavBar />
       <About />
