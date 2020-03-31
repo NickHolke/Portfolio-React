@@ -20,12 +20,12 @@ const Graph = () => {
       <Bar width='95%' delay='880ms' name='REACT' show={showBars}/>
       <Bar width='90%' delay='960ms' name='HTML/CSS' show={showBars}/>
       <Bar width='88%' delay='1040ms' name='PING-PONG' show={showBars}/>
-      <Bar width='80%' delay='1120ms' name='NODE' show={showBars}/>
-      <Bar width='78%' delay='1200ms' name='POSTGRES' show={showBars}/>
-      <Bar width='78%' delay='1280ms' name='REACT NATIVE' show={showBars}/>
-      <Bar width='75%' delay='1360ms' name='MYSQL' show={showBars}/>
-      <Bar width='75%' delay='1440ms' name='MONGO' show={showBars}/>
-      <Bar width='73%' delay='1520ms' name='AWS' show={showBars}/>
+      <Bar width='85%' delay='1120ms' name='NODE' show={showBars}/>
+      <Bar width='84%' delay='1200ms' name='POSTGRES' show={showBars}/>
+      <Bar width='83%' delay='1280ms' name='REACT NATIVE' show={showBars}/>
+      <Bar width='82%' delay='1360ms' name='MYSQL' show={showBars}/>
+      <Bar width='82%' delay='1440ms' name='MONGO' show={showBars}/>
+      <Bar width='78%' delay='1520ms' name='AWS' show={showBars}/>
     </div>
   );
 }
