@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.98c0c78f.chunk.css",
-    "main.js": "/static/js/main.0fdaedc6.chunk.js",
-    "main.js.map": "/static/js/main.0fdaedc6.chunk.js.map",
+    "main.js": "/static/js/main.29d4b9fa.chunk.js",
+    "main.js.map": "/static/js/main.29d4b9fa.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4aabb46c.js",
     "runtime-main.js.map": "/static/js/runtime-main.4aabb46c.js.map",
-    "static/js/2.4e909ccb.chunk.js": "/static/js/2.4e909ccb.chunk.js",
-    "static/js/2.4e909ccb.chunk.js.map": "/static/js/2.4e909ccb.chunk.js.map",
+    "static/js/2.217cef09.chunk.js": "/static/js/2.217cef09.chunk.js",
+    "static/js/2.217cef09.chunk.js.map": "/static/js/2.217cef09.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.4e202a7cd8ec72e72cb723e1d1ca4204.js": "/precache-manifest.4e202a7cd8ec72e72cb723e1d1ca4204.js",
+    "precache-manifest.3a19c223f13cb8ba2b3f516d3537a8cb.js": "/precache-manifest.3a19c223f13cb8ba2b3f516d3537a8cb.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.98c0c78f.chunk.css.map": "/static/css/main.98c0c78f.chunk.css.map",
-    "static/js/2.4e909ccb.chunk.js.LICENSE.txt": "/static/js/2.4e909ccb.chunk.js.LICENSE.txt",
+    "static/js/2.217cef09.chunk.js.LICENSE.txt": "/static/js/2.217cef09.chunk.js.LICENSE.txt",
     "static/media/ReelRating.png": "/static/media/ReelRating.af6f8a32.png",
     "static/media/error.svg": "/static/media/error.34c3adc3.svg",
     "static/media/github.svg": "/static/media/github.27e94111.svg",
@@ -19,15 +19,14 @@
     "static/media/hotel_photo.png": "/static/media/hotel_photo.e4444a31.png",
     "static/media/linkedin_blue_.svg": "/static/media/linkedin_blue_.756fef89.svg",
     "static/media/linkedin_white_.svg": "/static/media/linkedin_white_.ab8d1ca9.svg",
-    "static/media/media_img.png": "/static/media/media_img.54aa72bd.png",
     "static/media/nick_cartoon.png": "/static/media/nick_cartoon.54aa72bd.png",
     "static/media/robinhood.png": "/static/media/robinhood.d15fee2a.png",
     "static/media/youtube.svg": "/static/media/youtube.17e15279.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.4aabb46c.js",
-    "static/js/2.4e909ccb.chunk.js",
+    "static/js/2.217cef09.chunk.js",
     "static/css/main.98c0c78f.chunk.css",
-    "static/js/main.0fdaedc6.chunk.js"
+    "static/js/main.29d4b9fa.chunk.js"
   ]
 }
