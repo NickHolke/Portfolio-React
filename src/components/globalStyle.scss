@@ -1,28 +1,27 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
-
 // $primary-orange: #FF5851;
-$teal:#41B3A3;
-$blue:#153B56;
-$lightBlue:rgb(28, 80, 118);
-$lighterBlue: rgb(37, 105, 154);
-$lightGrey: rgb(249, 249, 249);
-$pink: #E22866;
-$darkBlue: #1B242f;
-$titleFont: 'Montserrat';
-$font: 'Raleway';
+$teal: #41b3a3;
+$blue: #0c2b42;
+$lightBlue: #1c5076;
+$lighterBlue: #25699a;
+$lightGrey: #f9f9f9;
+$pink: #e22866;
+$darkBlue: #1b242f;
+$titleFont: 'Montserrat', sans-serif;
+$font: 'Montserrat', sans-serif;
 $fontColor: #616161;
 $titleColor: #505050;
 
-@mixin triangle-header($background){
+@mixin triangle-header($background) {
   position: relative;
-  &:before, &:after {
+
+  &:before,
+  &:after {
     background: $background;
     position: absolute;
-    content: "";
+    content: '';
     top: -50px;
     width: 50%;
-    height: 20%;
+    height: 100%;
     z-index: 1;
   }
 
@@ -41,4 +40,25 @@ $titleColor: #505050;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+}
+
+@mixin targetIE {
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    @content;
+  }
 }

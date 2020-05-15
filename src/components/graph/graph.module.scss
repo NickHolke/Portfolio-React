@@ -1,14 +1,6 @@
 @import '../globalStyle.scss';
 
 .graphWrapper {
- display: flex;
- flex-direction: column;
- transform: translateX(60%);
- opacity: 0.3;
- transition: opacity 900ms ease-in-out, transform 900ms ease-in-out;
-}
-
-.show {
-  opacity: 1;
-  transform: translateX(0);
+  display: flex;
+  flex-direction: column;
 }

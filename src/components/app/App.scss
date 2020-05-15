@@ -1,19 +1,142 @@
-* {
-  box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+@import '../globalStyle';
+
+*,
+*:before,
+*:after {
   margin: 0;
   padding: 0;
-  &::before {
-    box-sizing: border-box;
-  };
-  &::after {
-    box-sizing: border-box;
-  };
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 html {
-  scroll-behavior: smooth;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+
+  &.smooth-scroll {
+    scroll-behavior: smooth;
+  }
 }
 
+body {
+  color: $fontColor;
+  font-family: $font;
+}
 
+h2 {
+  line-height: 1;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  font-family: $titleFont;
+  font-weight: 800;
+  font-size: 40px;
+  color: $titleColor;
+  padding: 0;
+  margin-bottom: 50px;
 
+  $lineOffset: -20px;
 
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    background-color: currentColor;
+    opacity: 0.15;
+    top: 50%;
+    margin-top: -2px;
+  }
+
+  &:before {
+    left: $lineOffset;
+    transform: translateX(-100%);
+  }
+
+  &:after {
+    right: $lineOffset;
+    transform: translateX(100%);
+  }
+}
+
+p {
+  font-family: $font;
+  color: inherit;
+  line-height: 1.45;
+  font-size: 22px;
+}
+
+.scroll-target {
+  margin-top: -60px;
+  padding-top: 60px;
+}
+
+section {
+  > div {
+    padding: 150px 50px 230px 50px;
+  }
+
+  &:last-child {
+    > div {
+      padding-bottom: 150px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  section {
+    > div {
+      padding: 50px 40px 160px 40px;
+    }
+
+    &:last-child {
+      > div {
+        padding-bottom: 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 670px) {
+  h2 {
+    font-size: 28px;
+
+    &:before,
+    &:after {
+      width: 20px;
+    }
+
+    &:before {
+      left: -12px;
+    }
+
+    &:after {
+      right: -12px;
+    }
+  }
+}
+
+@media (max-width: 486px) {
+  section {
+    > div {
+      padding: 30px 25px 120px 25px;
+    }
+
+    &:last-child {
+      > div {
+        padding-bottom: 40px;
+      }
+    }
+  }
+}

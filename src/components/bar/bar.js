@@ -1,14 +1,21 @@
 import React from 'react';
-import { bar, barBackground, barGrow, wrapper, text } from './bar.module.scss';
-import classNames from 'classnames';
+import { bar, barBackground, wrapper, text } from './bar.module.scss';
 
-const Bar = ({ width, delay, name, show }) => (
+const Bar = React.memo(({ percent, delay, name }) => (
   <div className={wrapper}>
     <div className={barBackground}>
-    <span className={text}>{name}</span>
-      <div className={classNames(bar, {[barGrow]: show})} style={{width: width, transitionDelay: delay}}></div>
+      <span className={text} style={{ transitionDelay: `${delay + 50}ms` }}>
+        {name}
+      </span>
+      <div
+        className={bar}
+        style={{
+          width: `${Math.round(percent * 100)}%`,
+          transitionDelay: `${delay}ms`
+        }}
+      ></div>
     </div>
   </div>
-)
+));
 
 export default Bar;

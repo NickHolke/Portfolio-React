@@ -3,15 +3,21 @@
 a.link {
   text-decoration: none;
   color: white;
-  margin-left: 50px;
-  transition: color 300ms ease-in-out;
+  margin-right: 50px;
+  transition: color 300ms;
+
+  &:last-child {
+    margin-right: 0 !important;
+  }
+
   &:hover {
     color: $pink;
   }
 }
 
 nav {
-  background: $darkBlue;
+  background: rgba($darkBlue, 0.96);
+  backdrop-filter: blur(2px);
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -25,18 +31,30 @@ nav {
   font-size: 16px;
   height: 60px;
   z-index: 3;
+  text-transform: uppercase;
+}
+
+.name {
+  font-weight: 700;
 }
 
 .links {
   display: flex;
   flex-direction: row;
+  font-weight: 500;
+}
+
+@media (max-width: 700px) {
+  nav {
+    padding: 0 30px;
+  }
+
+  a.link {
+    margin-right: 30px;
+  }
 }
 
 @media (max-width: 630px) {
-  a.link {
-    margin-left: 30px;
-  }
-
   nav {
     font-size: 14px;
     padding: 0 50px 0 50px;
@@ -50,7 +68,6 @@ nav {
   }
 
   a.link {
-    margin-left: 20px;
+    margin-right: 20px;
   }
 }
-

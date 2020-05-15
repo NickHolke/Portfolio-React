@@ -1,48 +1,37 @@
 @import '../globalStyle.scss';
 
 .cartoon {
-  border-radius: 10%;
-  width: 50%;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 .wrapper {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transform: translateX(-60%);
-  opacity: 0.3;
-  transition: opacity 900ms ease-in-out, transform 900ms ease-in-out;
+  width: 390px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-right: 30px;
+  position: relative;
+  max-width: 100%;
 }
 
-.show {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.textWrapper {
-  font-family: $font;
-  color: $fontColor;
-  line-height: 1.45;
-}
-
-@media (max-width: 1200px) {
-  .cartoon {
-    width: 55%;
+@media (max-width: 960px) {
+  .wrapper {
+    margin-right: 5px;
   }
 }
 
-@media (max-width: 1200px) {
-  .cartoon {
-    width: 60%;
+@media (max-width: 860px) {
+  .wrapper {
+    width: 320px;
+    margin-left: -10px;
+    margin-right: 20px;
   }
 }
 
-@media (max-width: 450px) {
-  .cartoon {
-    width: 70%;
-  }
-  .textWrapper {
-    margin-top: 20px
+@media (max-width: 720px) {
+  .wrapper {
+    margin: 0 0 30px 0;
+    align-self: center;
   }
 }
