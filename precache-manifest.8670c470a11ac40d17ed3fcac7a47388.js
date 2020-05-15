@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "097b17b172c64467fc6f3f95a712c383",
+    "revision": "306d5c03c235d74a2a6f0df5b4462f23",
     "url": "/index.html"
   },
   {
-    "revision": "c370583d9307dbf618d9",
-    "url": "/static/css/main.98c0c78f.chunk.css"
+    "revision": "d3f871c861a9c80cd36b",
+    "url": "/static/css/main.1f432dfb.chunk.css"
   },
   {
-    "revision": "46764f54c54190df2102",
-    "url": "/static/js/2.22d33d9c.chunk.js"
+    "revision": "cc69e12d405dabd85cb5",
+    "url": "/static/js/2.da867004.chunk.js"
   },
   {
     "revision": "11a928b57aca5049fe950bf8bcde77c5",
-    "url": "/static/js/2.22d33d9c.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.da867004.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c370583d9307dbf618d9",
-    "url": "/static/js/main.721e9f0c.chunk.js"
+    "revision": "d3f871c861a9c80cd36b",
+    "url": "/static/js/main.e4875bf5.chunk.js"
   },
   {
     "revision": "0dde0d8a5fee0eee8983",
@@ -28,6 +28,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/ReelRating.af6f8a32.png"
   },
   {
+    "revision": "99ed9b1ac3fe027b06a515247f20f879",
+    "url": "/static/media/email.99ed9b1a.svg"
+  },
+  {
     "revision": "34c3adc3e607a92a4d56111e7d98e3e1",
     "url": "/static/media/error.34c3adc3.svg"
   },
@@ -36,28 +40,36 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/github.27e94111.svg"
   },
   {
-    "revision": "00dd29ceb8e2969994ad9d93df3022e0",
-    "url": "/static/media/github_blue.00dd29ce.svg"
+    "revision": "341e0e56a9df7555dd5d7c6772359191",
+    "url": "/static/media/github.341e0e56.svg"
   },
   {
     "revision": "e4444a310d3b3e7ea8240ec41bea669e",
     "url": "/static/media/hotel_photo.e4444a31.png"
   },
   {
-    "revision": "756fef89520bc90f3d56114fc00f4927",
-    "url": "/static/media/linkedin_blue_.756fef89.svg"
-  },
-  {
-    "revision": "ab8d1ca9b4045e05fc506c8a88bcc082",
-    "url": "/static/media/linkedin_white_.ab8d1ca9.svg"
+    "revision": "e2aebd0fb4a3df875ae95f6704c63c10",
+    "url": "/static/media/linkedin.e2aebd0f.svg"
   },
   {
     "revision": "54aa72bdee5106884436d14ccdcef681",
     "url": "/static/media/nick_cartoon.54aa72bd.png"
   },
   {
+    "revision": "339eb3193be14c9adb7268933dc5c7c6",
+    "url": "/static/media/phone.339eb319.svg"
+  },
+  {
     "revision": "d15fee2a3eca4be07e9ed7ffbbe7c687",
     "url": "/static/media/robinhood.d15fee2a.png"
+  },
+  {
+    "revision": "1e4315e889f60e66e08bf7150b90e365",
+    "url": "/static/media/subtitle.1e4315e8.svg"
+  },
+  {
+    "revision": "507c1275bca89a4d4462a070dd1d993e",
+    "url": "/static/media/title.507c1275.svg"
   },
   {
     "revision": "17e1527969a50b4c6791da4ee9b2a69c",
