@@ -1,7 +1,7 @@
-@import "../globalStyle";
+@import '../globalStyle';
 
 .landingPage {
-  height: 100vh;
+  height: calc(100vh - 60px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,188 +10,132 @@
   font-size: 50px;
   font-family: $titleFont;
   font-weight: bold;
-  background: radial-gradient(circle at 82% 60%, rgba(59, 59, 59,0.06) 0%, rgba(59, 59, 59,0.06) 69%,transparent 69%, transparent 100%),radial-gradient(circle at 36% 0%, rgba(185, 185, 185,0.06) 0%, rgba(185, 185, 185,0.06) 59%,transparent 59%, transparent 100%),radial-gradient(circle at 58% 82%, rgba(183, 183, 183,0.06) 0%, rgba(183, 183, 183,0.06) 17%,transparent 17%, transparent 100%),radial-gradient(circle at 71% 32%, rgba(19, 19, 19,0.06) 0%, rgba(19, 19, 19,0.06) 40%,transparent 40%, transparent 100%),radial-gradient(circle at 77% 5%, rgba(31, 31, 31,0.06) 0%, rgba(31, 31, 31,0.06) 52%,transparent 52%, transparent 100%),radial-gradient(circle at 96% 80%, rgba(11, 11, 11,0.06) 0%, rgba(11, 11, 11,0.06) 73%,transparent 73%, transparent 100%),radial-gradient(circle at 91% 59%, rgba(252, 252, 252,0.06) 0%, rgba(252, 252, 252,0.06) 44%,transparent 44%, transparent 100%),radial-gradient(circle at 52% 82%, rgba(223, 223, 223,0.06) 0%, rgba(223, 223, 223,0.06) 87%,transparent 87%, transparent 100%),radial-gradient(circle at 84% 89%, rgba(160, 160, 160,0.06) 0%, rgba(160, 160, 160,0.06) 57%,transparent 57%, transparent 100%),linear-gradient(90deg, rgb(46, 75, 248),rgb(166, 255, 237));
-}
+  position: relative;
 
-.link {
-  margin-top: -5px;
-  padding: 0;
-  pointer-events: none;
-  animation: show 700ms ease forwards 2.3s;
-}
+  &:before {
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: radial-gradient(
+        circle at 82% 60%,
+        rgba(59, 59, 59, 0.06) 0%,
+        rgba(59, 59, 59, 0.06) 69%,
+        transparent 69%,
+        transparent 100%
+      ),
+      radial-gradient(
+        circle at 36% 0%,
+        rgba(185, 185, 185, 0.06) 0%,
+        rgba(185, 185, 185, 0.06) 59%,
+        transparent 59%,
+        transparent 100%
+      ),
+      radial-gradient(
+        circle at 58% 82%,
+        rgba(183, 183, 183, 0.06) 0%,
+        rgba(183, 183, 183, 0.06) 17%,
+        transparent 17%,
+        transparent 100%
+      ),
+      radial-gradient(
+        circle at 71% 32%,
+        rgba(19, 19, 19, 0.06) 0%,
+        rgba(19, 19, 19, 0.06) 40%,
+        transparent 40%,
+        transparent 100%
+      ),
+      radial-gradient(
+        circle at 77% 5%,
+        rgba(31, 31, 31, 0.06) 0%,
+        rgba(31, 31, 31, 0.06) 52%,
+        transparent 52%,
+        transparent 100%
+      ),
+      radial-gradient(
+        circle at 96% 80%,
+        rgba(11, 11, 11, 0.06) 0%,
+        rgba(11, 11, 11, 0.06) 73%,
+        transparent 73%,
+        transparent 100%
+      ),
+      radial-gradient(
+        circle at 91% 59%,
+        rgba(252, 252, 252, 0.06) 0%,
+        rgba(252, 252, 252, 0.06) 44%,
+        transparent 44%,
+        transparent 100%
+      ),
+      radial-gradient(
+        circle at 52% 82%,
+        rgba(223, 223, 223, 0.06) 0%,
+        rgba(223, 223, 223, 0.06) 87%,
+        transparent 87%,
+        transparent 100%
+      ),
+      radial-gradient(
+        circle at 84% 89%,
+        rgba(160, 160, 160, 0.06) 0%,
+        rgba(160, 160, 160, 0.06) 57%,
+        transparent 57%,
+        transparent 100%
+      ),
+      linear-gradient(90deg, rgb(46, 75, 248), rgb(166, 255, 237));
+  }
 
-.button {
-  cursor: pointer;
-  font-size: 18px;
-  margin-top: 20px;
-  padding: 10px 10px 10px 10px;
-  background: none;
-  outline: none;
-  border: 2px solid white;
-  color: white;
-  font-family: $font;
-  opacity: 0;
-  animation: show 700ms ease forwards 2.3s;
-}
+  svg {
+    will-change: fill;
+  }
 
-.svgTitle { 
-  margin-bottom: 10px;
-  animation: fill 0.8s ease forwards 0.7s;
   path {
     stroke-dasharray: 100%;
     stroke-dashoffset: 100%;
+    will-change: stroke-dashoffset;
   }
+}
 
-  path:nth-child(1) {
-    animation: line-anim 2s ease forwards;
+.link {
+  padding: 0;
+  pointer-events: none;
+  animation: show 700ms ease forwards 2.3s;
+  font-size: 18px;
+  margin-top: 25px;
+  padding: 10px 18px;
+  background: none;
+  outline: none;
+  border: 2px solid currentColor;
+  color: white;
+  font-family: $font;
+  opacity: 0;
+  animation: show 700ms ease forwards 1.3s;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+
+  &:hover {
+    color: #8cf6fa;
   }
+}
 
-  path:nth-child(2) {
-    animation: line-anim 2s ease forwards 0.4s;
-  }
+.svgTitle {
+  margin-bottom: 20px;
+  animation: fill 0.8s ease forwards 1s;
 
-  path:nth-child(3) {
-    animation: line-anim 2s ease forwards 0.4s;
-  }
-
-  path:nth-child(4) {
-    animation: line-anim 2s ease forwards 0.5s;
-  }
-
-  path:nth-child(5) {
-    animation: line-anim 1.8s ease forwards;
-  }
-
-  path:nth-child(6) {
-    animation: line-anim 2s ease forwards;
-  }
-
-  path:nth-child(7) {
-    animation: line-anim 2s ease forwards 0.4s;
-  }
-
-  path:nth-child(8) {
-    animation: line-anim 2s ease forwards 0.3s;
-  }
-
-  path:nth-child(9) {
-    animation: line-anim 2s ease forwards 0.2s;
-  }
-
-  path:nth-child(10) {
-    animation: line-anim 2s ease forwards;
-  }
-
-  path:nth-child(11) {
-    animation: line-anim 2s ease forwards 0.4s;
-  }
-
-  path:nth-child(12) {
-    animation: line-anim 2s ease forwards 0.5s;
-  }
-
-  path:nth-child(13) {
-    animation: line-anim 2s ease forwards 0.2s;
-  }
-
-  path:nth-child(14) {
-    animation: line-anim 2s ease forwards 0.3s;
-  }
-
-  path:nth-child(15) {
-    animation: line-anim 2s ease forwards 0.6s;
+  path {
+    animation: line-anim 2.3s ease forwards;
   }
 }
 
 .svgSubtitle {
-  animation: fill 0.8s ease forwards 1.7s;
+  animation: fill 0.8s ease forwards 1.2s;
+
   path {
-    stroke-dasharray: 100%;
-    stroke-dashoffset: 100%;
-  }
-
-  path:nth-child(1) {
-    animation: line-anim 2s ease forwards 1.5s;
-  }
-
-  path:nth-child(2) {
-    animation: line-anim 2s ease forwards 1.6s;
-  }
-
-  path:nth-child(3) {
-    animation: line-anim 2s ease forwards 1.2s;
-  }
-
-  path:nth-child(4) {
-    animation: line-anim 2s ease forwards 1.4s;
-  }
-
-  path:nth-child(5) {
-    animation: line-anim 2s ease forwards 1.4s;
-  }
-
-  path:nth-child(6) {
-    animation: line-anim 2s ease forwards 1.4s;
-  }
-
-  path:nth-child(7) {
-    animation: line-anim 2s ease forwards 1.4s;
-  }
-
-  path:nth-child(8) {
-    animation: line-anim 2s ease forwards 1.4s;
-  }
-
-  path:nth-child(9) {
-    animation: line-anim 2s ease forwards 1.2s;
-  }
-
-  path:nth-child(10) {
-    animation: line-anim 2s ease forwards 1.4s;
-  }
-
-  path:nth-child(11) {
-    animation: line-anim 2s ease forwards 1.6s;
-  }
-
-  path:nth-child(12) {
-    animation: line-anim 2s ease forwards 1.5s;
-  }
-
-  path:nth-child(13) {
-    animation: line-anim 2s ease forwards 1.5s;
-  }
-
-  path:nth-child(14) {
-    animation: line-anim 2s ease forwards 1.5s;
-  }
-
-  path:nth-child(15) {
-    animation: line-anim 2s ease forwards 1.5s;
-  }
-
-  path:nth-child(16) {
-    animation: line-anim 2s ease forwards 1.7s;
-  }
-
-  path:nth-child(17) {
-    animation: line-anim 2s ease forwards 1.5s;
-  }
-
-  path:nth-child(18) {
-    animation: line-anim 2s ease forwards 1.5s;
-  }
-
-  path:nth-child(19) {
-    animation: line-anim 2s ease forwards 1.5s;
-  }
-
-  path:nth-child(20) {
-    animation: line-anim 2s ease forwards 1.6s;
-  }
-
-  path:nth-child(21) {
-    animation: line-anim 2s ease forwards 1.8s;
+    animation: line-anim 2.3s ease forwards 0.8s;
   }
 }
 
@@ -217,34 +161,20 @@
   }
 }
 
-@media (max-width: 600px) {
-  .svgTitle {
-    width: 300px;
-    margin-bottom: 4px;
+@media (max-width: 700px) {
+  .svgTitle,
+  .svgSubtitle {
+    height: auto;
   }
+
+  .svgTitle {
+    width: 310px;
+    margin-bottom: 20px;
+    max-width: calc(100% - 40vw);
+  }
+
   .svgSubtitle {
     width: 440px;
-  }
-  .link {
-    margin-top: -10px;
-  }
-  .button {
-    font-size: 16px;
+    max-width: calc(100% - 40px);
   }
 }
-
-@media (max-width: 450px) {
-  .svgTitle {
-    width: 240px;
-  }
-  .svgSubtitle {
-    width: 340px;
-  }
-  .button {
-    font-size: 14px;
-  }
-  .link {
-    margin-top: -15px;
-  }
-}
-

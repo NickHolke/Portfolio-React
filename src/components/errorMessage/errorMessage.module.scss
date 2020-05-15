@@ -3,21 +3,24 @@
 .wrapper {
   position: relative;
   font-family: $font;
-  background: #fafafa;
-  color: #020202;
-  text-align: center;
-  padding: 10px;
-  margin-top: 4px;
+  background: #5d3445;
+  color: #fff;
+  padding: 15px 15px 15px 48px;
+  margin-top: 10px;
   border-radius: 2px;
   opacity: 0;
-  animation: show-anim .8s ease forwards;
+  font-size: 13px;
+  line-height: 1;
+  animation: show-anim 0.8s ease forwards;
+  font-weight: 500;
 }
 
 .image {
   position: absolute;
   top: 50%;
-  left: 7px;
+  left: 15px;
   transform: translateY(-50%);
+  margin-top: -1px;
   height: 20px;
   width: 20px;
 }
@@ -26,11 +29,15 @@
   position: absolute;
   right: 10px;
   font-weight: bold;
-  padding: 2px;
+  padding: 5px 10px 7px 10px;
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
   font-size: 16px;
+
+  &:hover {
+    opacity: 0.6;
+  }
 }
 
 @keyframes show-anim {
@@ -40,7 +47,7 @@
 }
 
 @media (max-width: 510px) {
-  .wrapper{
+  .wrapper {
     font-size: 14px;
   }
   .image {
@@ -50,7 +57,7 @@
 }
 
 @media (max-width: 440px) {
-  .wrapper{
+  .wrapper {
     font-size: 12px;
   }
   .image {

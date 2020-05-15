@@ -1,33 +1,29 @@
-import React, {useState, useEffect } from 'react';
-import { graphWrapper,show,} from './graph.module.scss';
-import { useInView } from 'react-intersection-observer';
+import React from 'react';
+import { graphWrapper } from './graph.module.scss';
 import { Bar } from '../routes';
-import classNames from 'classnames';
 
-const Graph = () => {
-  const [showBars, setShowBars] = useState(false);
-  const [ref, inView,] = useInView();
+const skills = [
+  { name: 'Javascript', percent: 0.95 },
+  { name: 'React', percent: 0.95 },
+  { name: 'HTML/CSS', percent: 0.9 },
+  { name: 'Ping-Pong', percent: 0.88 },
+  { name: 'Node', percent: 0.85 },
+  { name: 'Postgres', percent: 0.84 },
+  { name: 'React Native', percent: 0.83 },
+  { name: 'MySQL', percent: 0.82 },
+  { name: 'Mongo', percent: 0.82 },
+  { name: 'AWS', percent: 0.78 }
+];
 
-  useEffect(() => {
-    if (inView) {
-      setShowBars(true);
-    }
-  }, [inView])
+const initialDelay = 800;
+const delay = 130;
 
-  return (
-    <div ref={ref} className={classNames(graphWrapper, {[show]: showBars})}>
-      <Bar width='95%' delay='800ms' name='JAVASCRIPT' show={showBars}/>
-      <Bar width='95%' delay='880ms' name='REACT' show={showBars}/>
-      <Bar width='90%' delay='960ms' name='HTML/CSS' show={showBars}/>
-      <Bar width='88%' delay='1040ms' name='PING-PONG' show={showBars}/>
-      <Bar width='85%' delay='1120ms' name='NODE' show={showBars}/>
-      <Bar width='84%' delay='1200ms' name='POSTGRES' show={showBars}/>
-      <Bar width='83%' delay='1280ms' name='REACT NATIVE' show={showBars}/>
-      <Bar width='82%' delay='1360ms' name='MYSQL' show={showBars}/>
-      <Bar width='82%' delay='1440ms' name='MONGO' show={showBars}/>
-      <Bar width='78%' delay='1520ms' name='AWS' show={showBars}/>
-    </div>
-  );
-}
+const Graph = React.memo(() => (
+  <div className={graphWrapper}>
+    {skills.map((skill, index) => (
+      <Bar key={skill.name} delay={initialDelay + delay * index} {...skill} />
+    ))}
+  </div>
+));
 
 export default Graph;

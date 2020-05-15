@@ -1,25 +1,28 @@
 @import '../globalStyle.scss';
-$radius: 7px;
+$radius: 50px;
 
 .wrapper {
   border-radius: $radius;
   height: 28px;
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .bar {
   border-radius: $radius;
-  background: linear-gradient(90deg, rgba(4,194,201,1) 0%, rgba(1,135,140,1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(4, 194, 201, 1) 0%,
+    rgba(1, 135, 140, 1) 100%
+  );
   height: 100%;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 600ms cubic-bezier(.5,.25,.51,1);
-}
+  transform: translateX(-100%);
+  transition: transform 1200ms cubic-bezier(0.19, 0.85, 0.54, 0.99);
+  will-change: transform;
 
-.barGrow {
-  transform: scaleX(1);
-  opacity: 1;
+  @at-root :global(.visible) & {
+    transform: translateX(0);
+  }
 }
 
 .barBackground {
@@ -28,38 +31,32 @@ $radius: 7px;
   background: rgb(242, 242, 242);
   flex: 4;
   height: 100%;
+  overflow: hidden;
 }
 
 .text {
   position: absolute;
   z-index: 2;
-  color: $lightGrey;
-  color: rgb(242, 242, 242);
+  color: #fff;
   font-family: $titleFont;
-  font-weight: bold;
-  font-size: 16px;
-  top: 5px;
-  left: 4px;
-}
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1;
+  top: 0;
+  left: 14px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: all 800ms cubic-bezier(0.19, 0.85, 0.54, 0.99);
+  transition-property: opacity, transform;
+  transform: translateX(-100px);
+  will-change: transform, opacity;
 
-@media (max-width: 1000px) {
-  .text {
-    top: 3px;
-    left: 6px;
-  }
-  .wrapper {
-    height: 26px;
-    margin-bottom: 18px;
-  }
-}
-
-@media (max-width: 450px) {
-  .text {
-    top: 3px;
-    left: 6px;
-  }
-  .wrapper {
-    height: 25px;
-    margin-bottom: 15px;
+  @at-root :global(.visible) & {
+    opacity: 1;
+    transform: translateX(0);
   }
 }

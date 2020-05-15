@@ -1,11 +1,19 @@
 import React from 'react';
-import { wrapper, content, front, logo, botLogo, bottom, link } from './bottomLink.module.scss';
+import {
+  wrapper,
+  content,
+  front,
+  logo,
+  botLogo,
+  bottom,
+  link
+} from './bottomLink.module.scss';
 import classNames from 'classnames';
 
-const bottomLink = ({srcFront, srcTop, alt, href}) => {
+const bottomLink = ({ title, srcFront, srcTop, alt, href }) => {
   return (
     <div className={wrapper}>
-      <a className={link} href={href} target="_blank">
+      <a className={link} href={href} target="_blank" rel="noopener noreferrer">
         <div className={content}>
           <div className={front}>
             <img className={logo} src={srcFront} alt={alt} />
@@ -16,7 +24,7 @@ const bottomLink = ({srcFront, srcTop, alt, href}) => {
         </div>
       </a>
     </div>
-  )
-}
+  );
+};
 
 export default bottomLink;

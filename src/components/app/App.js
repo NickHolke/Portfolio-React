@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.scss';
-import { About, LandingPage, Portfolio, NavBar, Contact } from '../routes'
+import { About, LandingPage, Portfolio, NavBar, Contact } from '../routes';
 
 function App() {
   return (
