@@ -11,8 +11,16 @@ import { ReactComponent as Subtitle } from './subtitle.svg';
 const LandingPage = () => {
   return (
     <div id="home" className={landingPage}>
-      <Title className={svgTitle} />
-      <Subtitle className={svgSubtitle} />
+      <h1>
+        <span>Hi I'm Nick Holke.</span>
+        <span> I'm a software engineer.</span>
+      </h1>
+      <Title aria-hidden="true" role="presentation" className={svgTitle} />
+      <Subtitle
+        aria-hidden="true"
+        role="presentation"
+        className={svgSubtitle}
+      />
 
       <a
         className={link}

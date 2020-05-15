@@ -12,6 +12,28 @@
   font-weight: bold;
   position: relative;
 
+  h1 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 500;
+    height: 1px;
+    text-indent: -9999px;
+
+    span {
+      display: block;
+      text-indent: -9999px;
+    }
+
+    @include targetIE {
+      text-indent: 0;
+      height: auto;
+
+      span {
+        text-indent: 0;
+      }
+    }
+  }
+
   &:before {
     content: '';
     pointer-events: none;
@@ -21,7 +43,8 @@
     right: 0;
     bottom: 0;
     z-index: -1;
-    background: radial-gradient(
+    background-color: #3c58f4;
+    background-image: radial-gradient(
         circle at 82% 60%,
         rgba(59, 59, 59, 0.06) 0%,
         rgba(59, 59, 59, 0.06) 69%,
@@ -136,6 +159,13 @@
 
   path {
     animation: line-anim 2.3s ease forwards 0.8s;
+  }
+}
+
+@include targetIE {
+  .svgTitle,
+  .svgSubtitle {
+    display: none !important;
   }
 }
 

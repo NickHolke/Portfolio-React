@@ -56,3 +56,9 @@ $titleColor: #505050;
     @content;
   }
 }
+
+@mixin targetIE {
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    @content;
+  }
+}
