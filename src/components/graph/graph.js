@@ -15,7 +15,7 @@ const skills = [
   { name: 'AWS', percent: 0.78 }
 ];
 
-const initialDelay = 800;
+const initialDelay = 200;
 const delay = 130;
 
 const Graph = React.memo(() => (
