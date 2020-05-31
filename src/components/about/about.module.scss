@@ -1,13 +1,13 @@
 @import '../globalStyle.scss';
 
 .aboutSection {
-  padding-top: 130px;
+  padding-top: 60px;
   padding-bottom: 180px;
 }
 
 .title {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 
   h2 {
     margin-bottom: 25px;
@@ -36,7 +36,7 @@
 }
 
 .skillsWrapper {
-  margin-top: 120px;
+  margin-top: 60px;
   min-width: 350px;
   flex: 1;
 }
