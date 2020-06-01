@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.38260526.chunk.css",
+    "main.css": "/static/css/main.56031640.chunk.css",
     "main.js": "/static/js/main.24aff0a6.chunk.js",
     "main.js.map": "/static/js/main.24aff0a6.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4aabb46c.js",
@@ -8,9 +8,9 @@
     "static/js/2.da867004.chunk.js": "/static/js/2.da867004.chunk.js",
     "static/js/2.da867004.chunk.js.map": "/static/js/2.da867004.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.2099378b2b03d0a31a4416917d7379d5.js": "/precache-manifest.2099378b2b03d0a31a4416917d7379d5.js",
+    "precache-manifest.a39bff6b065a50de465f2a8a36950d02.js": "/precache-manifest.a39bff6b065a50de465f2a8a36950d02.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.38260526.chunk.css.map": "/static/css/main.38260526.chunk.css.map",
+    "static/css/main.56031640.chunk.css.map": "/static/css/main.56031640.chunk.css.map",
     "static/js/2.da867004.chunk.js.LICENSE.txt": "/static/js/2.da867004.chunk.js.LICENSE.txt",
     "static/media/ReelRating.png": "/static/media/ReelRating.af6f8a32.png",
     "static/media/email.99ed9b1a.svg": "/static/media/email.99ed9b1a.svg",
@@ -29,7 +29,7 @@
   "entrypoints": [
     "static/js/runtime-main.4aabb46c.js",
     "static/js/2.da867004.chunk.js",
-    "static/css/main.38260526.chunk.css",
+    "static/css/main.56031640.chunk.css",
     "static/js/main.24aff0a6.chunk.js"
   ]
 }
