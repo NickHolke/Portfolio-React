@@ -109,11 +109,11 @@ const Contact = React.memo(() => {
                   icon={Email}
                   href="mailto:nickholke@gmail.com"
                 />
-                <ContactLink
+                {/* <ContactLink
                   text="(925) 353-5053"
                   icon={Phone}
                   href="tel:9253535053"
-                />
+                /> */}
                 <ContactLink
                   text="See my work on GitHub"
                   icon={Github}
