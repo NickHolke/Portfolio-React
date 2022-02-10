@@ -10,7 +10,7 @@
     "classnames": "^2.2.6",
     "emailjs-com": "^2.4.1",
     "intersection-observer": "^0.10.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "react": "^16.13.0",
     "react-app-polyfill": "^1.0.6",
     "react-dom": "^16.13.0",
